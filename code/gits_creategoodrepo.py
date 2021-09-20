@@ -16,4 +16,7 @@ from subprocess import Popen, PIPE
 
 
 def gits_creategoodrepo(args):
-    return False
+    process_commands = "gh repo create <repo name> --template sak007/goodRepo_template --public -y"
+    p = Popen(process_commands, stdout=subprocess.PIPE, stderr=subprocess universal_newlines=True, shell = True)
+    output, errors = p.communicate()
+    return True
