@@ -29,6 +29,8 @@ from gits_branch import gits_branch
 from gits_init import gits_init
 from gits_pull import gits_pull
 
+from gits_creategoodrepo import gits_creategoodrepo
+
 logger_status = init_gits_logger()
 if not logger_status:
     print("ERROR: logger not initialised")
@@ -175,6 +177,10 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
                                  help="you can specify the branch you want to pull",
                                  required=False)
 gits_pull_subparser.set_defaults(func=gits_pull)
+gits_creategoodrepo_subparser = subparsers.add_parser("creategoodrepo")
+gits_creategoodrepo_subparser.add_argument("repo_name", help = "name of the repo")
+gits_creategoodrepo_subparser.set_defaults(func=gits_creategoodrepo)
+
 
 args = parser.parse_args()
 args.func(args)

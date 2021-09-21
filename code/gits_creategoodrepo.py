@@ -13,10 +13,19 @@ git init --template ./goodRepo_template
 """
 
 from subprocess import Popen, PIPE
-
+import gits_logging
 
 def gits_creategoodrepo(args):
-    process_commands = "gh repo create <repo name> --template sak007/goodRepo_template --public -y"
-    p = Popen(process_commands, stdout=subprocess.PIPE, stderr=subprocess universal_newlines=True, shell = True)
-    output, errors = p.communicate()
+    try:
+        process_commands = ["gh", "repo", "create", args.repo_name, "--template",
+            "sak007/goodRepo_template", "--public", "-y"]
+        process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process.communicate()
+    except Exception as e:
+        gits_logging.gits_logger.error("gits creategoodrepo command caught an "
+            + "exception")
+        gits_logging.gits_logger.error("{}".format(str(e)))
+        print("ERROR: gits creategoodrepo command caught an exception")
+        print("ERROR: {}".format(str(e)))
+        return False
     return True
