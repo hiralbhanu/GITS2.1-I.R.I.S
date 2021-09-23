@@ -31,12 +31,20 @@ def gits_push(args):
 
         #Checking whether below files are present in the committed repository
         req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
-        #current_files = ["git", "ls-files", "$(git rev-parse --show-toplevel)","--full-name"]
-        current_files = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
-        process3 = subprocess.Popen(current_files , stdout=PIPE, stderr=PIPE)
+        current_files_command = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
+        process3 = subprocess.Popen(current_files_command , stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
         print("List of files present ..")
-        print(stdout.decode("utf-8"))
+        committed_files = stdout.decode("utf-8")
+        missing_files = []
+
+        for file in req_files:
+            if file not in committed_files:
+                missing_files.append(file)
+
+        if missing_files:
+            print(' '.join(a)+' missing in the repository')
+
 
         print("Pushing local commits")
         push_commits = ["git", "push"]
