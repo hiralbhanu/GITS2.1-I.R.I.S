@@ -29,6 +29,13 @@ def gits_push(args):
             stdout, stderr = process1.communicate()
             print(stdout.decode("utf-8"))
 
+        #Checking whether below files are present in the committed repository
+        req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
+        current_files = ["git", "ls-files", "$(git rev-parse --show-toplevel)","--full-name"]
+        process3 = subprocess.Popen(pull_rebase, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process3.communicate()
+        print(stdout.decode("utf-8"))
+
         print("Pushing local commits")
         push_commits = ["git", "push"]
         process2 = subprocess.Popen(push_commits, stdout=PIPE, stderr=PIPE)
