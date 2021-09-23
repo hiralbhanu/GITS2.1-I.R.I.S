@@ -31,7 +31,8 @@ def gits_push(args):
 
         #Checking whether below files are present in the committed repository
         req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
-        current_files = ["git", "ls-files", "$(git rev-parse --show-toplevel)","--full-name"]
+        #current_files = ["git", "ls-files", "$(git rev-parse --show-toplevel)","--full-name"]
+        current_files = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
         process3 = subprocess.Popen(current_files , stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
         print("List of files present ..")
