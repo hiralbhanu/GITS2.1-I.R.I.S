@@ -34,6 +34,7 @@ def gits_push(args):
         current_files = ["git", "ls-files", "$(git rev-parse --show-toplevel)","--full-name"]
         process3 = subprocess.Popen(current_files , stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
+        print("List of files present ..")
         print(stdout.decode("utf-8"))
 
         print("Pushing local commits")
