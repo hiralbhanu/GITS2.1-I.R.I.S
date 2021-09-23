@@ -34,7 +34,7 @@ def gits_push(args):
         current_files_command = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
         process3 = subprocess.Popen(current_files_command , stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
-        print("List of files present ..")
+
         committed_files = stdout.decode("utf-8")
         missing_files = []
 
@@ -43,7 +43,7 @@ def gits_push(args):
                 missing_files.append(file)
 
         if missing_files:
-            print(' '.join(a)+' missing in the repository')
+            print(' '.join(missing_files)+' missing in the repository')
 
 
         print("Pushing local commits")
