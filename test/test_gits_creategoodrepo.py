@@ -21,8 +21,8 @@ def remove_extras(path):
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(barre=None, template="test_template", amend=True))
-@patch("subprocess.Popen", return_value="anything")
-def test_gits_init_template(mock_var1, mock_args):
+@patch("subprocess.Popen", return_value="0")
+def test_gits_creategoodrepo(mock_var1, mock_args):
     """
     Function to test gits creategoodrepo , success case
     """

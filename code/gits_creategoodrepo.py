@@ -21,6 +21,8 @@ def gits_creategoodrepo(args):
             "sak007/goodRepo_template", "--public", "-y"]
         process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
+        if(process.returncode == 1):
+            return False
     except Exception as e:
         gits_logging.gits_logger.error("gits creategoodrepo command caught an "
             + "exception")
