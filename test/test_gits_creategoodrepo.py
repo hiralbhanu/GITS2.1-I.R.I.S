@@ -28,7 +28,21 @@ def test_gits_creategoodrepo(mock_var1, mock_args):
     """
     test_result = gits_creategoodrepo(mock_args)
     remove_extras(".")
-    if test_result:
+    if test_result==0:
+        assert True, "Normal Case"
+    else:
+        assert False
+
+@patch("argparse.ArgumentParser.parse_args",
+       return_value=argparse.Namespace(barre=None, template="test_template", amend=True))
+@patch("subprocess.Popen", return_value="1")
+def test_gits_creategoodrepo(mock_var1, mock_args):
+    """
+    Function to test gits creategoodrepo , failure case i.e subprocess will return 1 on command failing to execute
+    """
+    test_result = gits_creategoodrepo(mock_args)
+    remove_extras(".")
+    if test_result==0:
         assert True, "Normal Case"
     else:
         assert False
