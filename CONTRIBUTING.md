@@ -50,24 +50,24 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 2. Follow the template below to create a new command and update the values in
   <text> with appropriate values
 
-from subprocess import Popen, PIPE
-import gits_logging
+    from subprocess import Popen, PIPE
+    import gits_logging
 
-def gits_<command name>(args):
-    try:
-        #Repeat the following code to execute multiple commands
-        command = "<command to be executed>"
-        process_commands = command.split()
-        process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
-        stdout, stderr = process.communicate()
-    except Exception as e:
-        gits_logging.gits_logger.error("gits <command name> command caught an "
-            + "exception")
-        gits_logging.gits_logger.error("{}".format(str(e)))
-        print("ERROR: gits <command name> command caught an exception")
-        print("ERROR: {}".format(str(e)))
-        return False
-    return True
+    def gits_<command name>(args):
+        try:
+            #Repeat the following code to execute multiple commands
+            command = "<command to be executed>"
+            process_commands = command.split()
+            process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
+            stdout, stderr = process.communicate()
+        except Exception as e:
+            gits_logging.gits_logger.error("gits <command name> command caught an "
+                + "exception")
+            gits_logging.gits_logger.error("{}".format(str(e)))
+            print("ERROR: gits <command name> command caught an exception")
+            print("ERROR: {}".format(str(e)))
+            return False
+        return True
 3. Add the following entries in <PROJECT HOME>/code/gits.py
 
     from gits_<command name> import gits_<command name>
