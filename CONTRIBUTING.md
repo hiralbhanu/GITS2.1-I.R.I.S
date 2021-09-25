@@ -50,6 +50,7 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 2. Follow the template below to create a new command and update the values in
   <text> with appropriate values
 
+    ```
     from subprocess import Popen, PIPE
     import gits_logging
 
@@ -68,8 +69,10 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
             print("ERROR: {}".format(str(e)))
             return False
         return True
+    ```
 3. Add the following entries in <PROJECT HOME>/code/gits.py
 
+    ```
     from gits_<command name> import gits_<command name>
     .
     .
@@ -79,3 +82,4 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
     .
     .
     gits_<command name>_subparser.set_defaults(func=gits_<command name>)
+    ```
