@@ -14,9 +14,12 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS)
 
 # About I.R.I.S
-So you want to start a Project. Ever wondered what makes a project repository good?
+"Your repo is your resume. But what is a good looking repo?"
+
+So you want to start a Project on Github. Ever wondered what makes a project repository good?
 What makes your project stand apart when collaborating with multiple developers?
-Your repo is your resume. But what is a good looking repo?
+What would ensure that your project is well documented and readable to other developers who might try to work on this in the future?
+
 
 Worry not. I.R.I.S is here.
 
@@ -28,40 +31,10 @@ I.R.I.S streamlines your repository as per the Software Engineering Standards, s
 
 I.R.I.S can be thought of a base repo to make sure your project repo fits the bill.
 
-# Installation for Linux
-1. Clone IRIS Repo
-2. From the root directory run the following command
-    ```
-    pip install -r requirements.txt
-    ```
-3. Go to configurations directory and run the following command
+# Installation Setup
+## On Windows Machines
 
-    If you are working on Linux system with a bash terminal or a Windows system using Windows subsystem for linux:
-    ```
-    bash project_init.sh
-    ```
-    If you are working on Linux system with a fish terminal:
-    ```
-    fish project_init.fish
-    ```
-4. Source the bashrc file
-    ```
-    source ~/.bashrc
-    ```
-    
-    Note: Open the .bashrc file in User home directory to make sure that the alias command does not have any white spaces in the path. If so, rename the directory to remove the white spaces and re-run the setup.
-
-# Installation for Windows
-1. Clone GITS Repo
-2. From the root directory run the following command
-    ```
-    pip install -r requirements.txt
-    ```
-3. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows 
-although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a 
-virtual machine might be preferred.
-
-    Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
+## On Linux/MacOS Machines
 
 # How to Contribute?
 Please take a look at our CONTRIBUTING.md where we provide instructions on contributing to the repo and help us in enhancing the current video conferencing platforms.
@@ -69,7 +42,8 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 # Documentation
 ## Functionalities Implemented
 
-## Experimentation setup for phase 3
+## Experimentation setup for phase 2
+(Please check the Projects Tab to see how you can make the project better)
 
 This project aims to ease the developers efforts while working on their project repos. I.R.I.S makes their work easier and saves time by providing all the necessary default files in the required structure to ensure that the developers can focus on making their project better and not worry about the repository.
 
@@ -91,7 +65,7 @@ Here are some measures that can help compare the results between traditional Git
 # Team Members
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group Members 
+Members 
 1. Ashok Kumar Selvam
 2. Rithik Jain
 3. Sri Athithya Kruth Babu
