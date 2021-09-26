@@ -1,4 +1,4 @@
-# Contributing to GIT Simplified (GITS)
+# Contributing to Ideal ReposItory for Software projects (I.R.I.S)
 
 Thank you so much for taking an interest in contributing! There are many ways to contribute to this project.
 
@@ -9,7 +9,7 @@ Please note we have a code of conduct (CODE_OF_CONDUCT.md), please follow it in 
 
 ## Pull Request Process
 
-1. Maintain GITS project quality.
+1. Maintain I.R.I.S project quality.
 2. Should have appropriate ISSUE linked with the Pull request.
 3. The PR should be assigned to the individual requesting a merge.
 4. The Reviewers must approve the pull request before merging the code.
