@@ -35,7 +35,7 @@ def test_gits_creategoodrepo(mock_var1, mock_args):
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(barre=None, template="test_template", amend=True))
-# @patch("subprocess.Popen", return_value="1")
+@patch("subprocess.Popen", return_value="1")
 def test_gits_creategoodrepo(mock_var1):
     """
     Function to test gits creategoodrepo , failure case i.e subprocess will return 1 on command failing to execute
