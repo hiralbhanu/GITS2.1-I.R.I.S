@@ -1,27 +1,35 @@
 
-# GITS 
-### GIT Simplified
+# I.R.I.S
+### Ideal ReposItory for Software projects
 
-![GitHub](https://img.shields.io/github/license/harshitpatel96/GITS)
-[![Build Status](https://travis-ci.com/harshitpatel96/GITS.svg?branch=master)](https://travis-ci.com/harshitpatel96/GITS)
-[![codecov](https://codecov.io/gh/harshitpatel96/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://codecov.io/gh/harshitpatel96/GITS/)
-![YouTube Video Views](https://img.shields.io/youtube/views/6Y8_RQecnZ8?style=social)
+![GitHub](https://img.shields.io/github/license/sak007/GITS)
+[![Build Status](https://travis-ci.com/sak007/GITS.svg?branch=master)](https://travis-ci.com/sak007/GITS)
+[![codecov](https://codecov.io/gh/sak007/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://codecov.io/gh/sak007/GITS/)
 
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
 
-![GitHub issues](https://img.shields.io/github/issues/harshitpatel96/GITS)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/harshitpatel96/GITS)
+![GitHub issues](https://img.shields.io/github/issues/sak007/GITS)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS)
 
-![Lines of code](https://img.shields.io/tokei/lines/github/harshitpatel96/GITS)
+![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS)
 
-[![](https://img.youtube.com/vi/6Y8_RQecnZ8/hqdefault.jpg)](https://youtu.be/6Y8_RQecnZ8 "GITS demo")
+# About I.R.I.S
+So you want to start a Project. Ever wondered what makes a project repository good?
+What makes your project stand apart when collaborating with multiple developers?
+Your repo is your resume. But what is a good looking repo?
 
-# About GITS
-GITS streamlines most frequently performed workflows using fewer commands which is so much easier and better than usual.
-Git-Simplified AKA GITS can be thought of wrapper around major Git functionalities.
+Worry not. I.R.I.S is here.
+
+I.R.I.S (Ideal ReposItory for Software projects) is a tool which can help developers align their repos as per the standards defined in Software Engineering.
+
+You don't have to worry about whether you missed to add a test case, or scratch your head on what more files/functionalities are needed to make your repository look good.
+
+I.R.I.S streamlines your repository as per the Software Engineering Standards, so that your repository has all the necessary Structure to be called a "Good Repo".
+
+I.R.I.S can be thought of a base repo to make sure your project repo fits the bill.
 
 # Installation for Linux
-1. Clone GITS Repo
+1. Clone IRIS Repo
 2. From the root directory run the following command
     ```
     pip install -r requirements.txt
@@ -98,65 +106,19 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 ## Experimentation setup for phase 3
 
-This project aims to ease the developers efforts while interacting with version control system Git. 
+This project aims to ease the developers efforts while working on their project repos. I.R.I.S makes their work easier and saves time by providing all the necessary default files in the required structure to ensure that the developers can focus on making their project better and not worry about the repository.
+
 Here are few motivation points behind coming up with this idea:
-- Few git command names are very misleading from the end user's perspective. Consider this, ```git checkout``` command is used for both switching the branches and removing changes present inside working directory.
-- Based on the development practice used by various teams, there are some tasks which requires the execution of more than one command to complete the task. This process can be easily automated such that developer only need to execute a single command to get their work done.
-- There are almost always the cases that because of not much efficient syncing techniques, code pushed to the remote repository results in conflict while merging. It is always best practice to solve any such merge conflicts on the local repo rather than the remote one.
+- When working on one of the homeworks for the course, we realised the dearth of project repos which adhere to the standard structure.
+- Even if the Idea is good, developers miss out on making a good impression due to the inability to make the projects transferable and easily-usable.
 
-To solve the issues described above, we came up with the project **gits** that stands for **git-Simplified**.
-So, this experiment aims to compare various aspects to traditional git and our proposed gits.
-
-### Participation
-
-Basic idea here is to let the participants finish the tasks present in the tasks list mentioned below, and observe whether gits made this process easier or not. 
-This is higher level idea for this study.
-There are two ways to choose who will use git and who will use gits.
-1. If you have significant number of participants, you can divide them up into two groups. Participants from one group will use Gits to complete the set of tasks while participants from second group will use traditional Git to finish their tasks. 
-to achieve some great results, participants with lesser git knowledge should be assigned to later group who will be using git to finish their task. That would lessen the bias in observations since people would be already familiar with git rather than gits.
-2. If number of participants are limited and have enough time, you can let each participants finish the set of tasks twice. Once using traditional git and then using gits.
-However, to remove any unwanted bias here as well, divide the participants in two groups. first group should use the git first and then gits. Second group should finish the tasks using gits first and then using git.
-
-Ask each participants to setup the gits inside their local machine before starting the study using steps shown above.
+To solve the issues described above, we came up with the project **I.R.I.S** that stands for **Ideal ReposItory for Software projects**.
 
 ### Tasks list
-Here is basic draft of the tasks that covers almost each enhancement. 
-Feel free to edit this list as per your convenience. Add few tasks if you got more time for the experiment.
-
-- Create a test repository that can be used by participants to complete their tasks.
-- Ask participant to clone the repository on their local machine.
-- Ask participant to set their git profile name and email to "dummy_name" and "dummy@name.com" respectively. Once they are done, ask them to switch it back to the original ones.
-- Create two branches with name: branch1 and branch2.
-- list all the branches.
-- From current branch, switch to the branch1.
-- create a file named "foo.txt" and write some text in it.
-- track the file "foo.txt" so that it gets considered for the next commit.
-- Create another file named "bar.txt" and add some text in it.
-- track this file "bar.txt" so that it gets considered for the next commit.
-- commit these changes with appropriate commit message.
-- make some change to the "bar.txt" and track those changes so that they get considered for the next commit.
-- You found some issues with changes to this file and now you don't want it to be considered for the next commit. remove those changes from commit area.
-- Also remove those changes from working directory.
-- commit these changes with appropriate commit message and switch to the main branch.
-- merge changes from the branch1 into this main branch and push those changes to the remote main branch.
-- Now switch to branch2.
-- Main branch has changed since we created this branch so this branch is working behind in changes. Make this branch up to date with local main branch.
-- You just got to know that some other developer merged his changes to the remote main branch. Since you have checked out from the main branch, you also want those changes in development branch. So, make your branch up to date with remote main branch.
-- Now switch to main branch again.
-- create new file "temp.txt" and write some text in it and commit those changes.
-- You just realized you directly made changes to the main branch rather than your development branch by mistake. Undo those changes by making current main branch same as remote main branch.
-- You just got to know that someone merged their changes to the remote main branch. Sync your main branch.
-- Last commit that is present in the main branch is not working well so you want to remove changes made by that commit entirely on both: local and remote.
-- You are doing great till now but assume a hypothetical scenario where you have made a mess in your local repo and want to delete the current repo and fork it all again.
-
+You can checkout the Projects Tab in GitHub to see the upcoming tasks for the Project.
 
 ### Quantitative measures
-Here are some measures that can help compare the results between traditional git and gits.
-1. Time taken to finish a particular task.
-2. Number of commands executed to complete each task.
-3. Number of time participants referred to the documentation or any other resources.
-
-### Qualitative measures
-Along with quantitative measures described above, few qualitative measures can help to assess the performance better.
-1. Familiarity with traditional git
-2. hardness of the task
+Here are some measures that can help compare the results between traditional Git/Github Repo Creation and I.R.I.S
+1. The default files created as part of the repo creation.
+2. The structure followed for the default files.
+3. The default template followed for most files, so that even the most layman developer can ensure that his repo adheres to the Standard.
