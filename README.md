@@ -68,41 +68,6 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 # Documentation
 ## Functionalities Implemented
-1. [gits profile](https://github.com/harshitpatel96/GITS/blob/master/docs/profile.md)
-1. [gits rebase](https://github.com/harshitpatel96/GITS/blob/master/docs/rebase.md)
-1. [gits reset](https://github.com/harshitpatel96/GITS/blob/master/docs/reset.md)
-1. [gits upstream](https://github.com/harshitpatel96/GITS/blob/master/docs/upstream.md)
-1. [gits super reset](https://github.com/harshitpatel96/GITS/blob/master/docs/super_reset.md)
-1. [gits commit](https://github.com/harshitpatel96/GITS/blob/master/docs/commit.md)
-1. [gits create_branch](https://github.com/harshitpatel96/GITS/blob/master/docs/create_branch.md)
-1. [gits logging](https://github.com/harshitpatel96/GITS/blob/master/docs/logging.md)
-1. [gits undo](https://github.com/harshitpatel96/GITS/blob/master/docs/undo.md)
-1. [gits untrack](https://github.com/harshitpatel96/GITS/blob/master/docs/untrack.md)
-1. [gits track](https://github.com/harshitpatel96/GITS/blob/master/docs/track.md)
-1. [gits delete](https://github.com/harshitpatel96/GITS/blob/master/docs/delete.md)
-1. [gits sync](https://github.com/harshitpatel96/GITS/blob/master/docs/sync.md)
-1. [gits switch](https://github.com/harshitpatel96/GITS/blob/master/docs/switch.md)
-1. [gits status](https://github.com/harshitpatel96/GITS/blob/master/docs/status.md)
-1. [gits branch](https://github.com/harshitpatel96/GITS/blob/master/docs/branch.md)
-1. [gits diff](https://github.com/harshitpatel96/GITS/blob/master/docs/diff.md)
-1. [gits init](https://github.com/harshitpatel96/GITS/blob/master/docs/init.md)
-1. [gits merge](https://github.com/harshitpatel96/GITS/blob/master/docs/merge.md)
-1. [gits push](https://github.com/harshitpatel96/GITS/blob/master/docs/push.md)
-1. [gits pull](https://github.com/harshitpatel96/GITS/blob/master/docs/pull.md)
-
-
-## Pydoc implementation
-We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
-For example if you want to go through all the documentation for all files in code/ directory, do the following: 
-
-`cd code`<br>
-`python3 -m pydoc -b `
-
-This will open up a browser and you can see all the files. You can click on a particular file to access the 
-documentation associated with that file.
-
-This repository is made for CSC 510 Software Engineering Course at NC State University.
-
 
 ## Experimentation setup for phase 3
 
@@ -122,3 +87,13 @@ Here are some measures that can help compare the results between traditional Git
 1. The default files created as part of the repo creation.
 2. The structure followed for the default files.
 3. The default template followed for most files, so that even the most layman developer can ensure that his repo adheres to the Standard.
+
+# Team Members
+This repository is made for CSC 510 Software Engineering Course at NC State University.
+
+Group Members 
+1. Ashok Kumar Selvam
+2. Rithik Jain
+3. Sri Athithya Kruth Babu
+4. Subramanian Venkataraman
+5. Zunaid Hasan Sorathiya
