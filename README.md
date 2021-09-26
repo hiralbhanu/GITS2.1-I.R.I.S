@@ -42,6 +42,14 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 # Documentation
 ## Functionalities Implemented
 
+0. Use custom commands to work with Git from your command line. 
+1. Create Default files on startup according to the Stucture.
+2. Files will be auto generated with template to give the developers an idea on what needs to be filled.
+3. Auto test case function generation whenever new code gets pushed. Developer can update the necessary tests inside the function.
+4. Score Calculation to see how much the repo matches with the ideal repo structure.
+5. Create a custom command to work with Git and make development fun.
+
+
 ## Experimentation setup for phase 2
 (Please check the Projects Tab to see how you can make the project better)
 
