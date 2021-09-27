@@ -179,42 +179,71 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
 gits_pull_subparser.set_defaults(func=gits_pull)
 
 gits_creategoodrepo_subparser = subparsers.add_parser("creategoodrepo")
-gits_creategoodrepo_subparser.add_argument("repo_name", help = "name of the repo")
+gits_creategoodrepo_subparser.add_argument("repo_name", help="name of the repo")
 gits_creategoodrepo_subparser.set_defaults(func=gits_creategoodrepo)
 
 gits_custom_subparser = subparsers.add_parser("custom")
-gits_custom_subparser.add_argument("command",
-    help = "command to be used to execute sequence of custom commands")
-gits_custom_subparser.add_argument("--create", action='store_true',
-                                 help="create a new custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("-c", action='store_true',
-                                 help="create a new custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("--update", action='store_true',
-                                 help="update the existing custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("-u", action='store_true',
-                                 help="update the existing custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("--delete", action='store_true',
-                                 help="delete a custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("-d", action='store_true',
-                                 help="delete a custom command",
-                                 required=False)
-gits_custom_subparser.add_argument("--reset", action='store_true',
-                                 help="delete all custom commands",
-                                 required=False)
-gits_custom_subparser.add_argument("-r", action='store_true',
-                                 help="delete all custom commands",
-                                 required=False)
-gits_custom_subparser.add_argument("--list", action='store_true',
-                                 help="list all available custom commands",
-                                 required=False)
-gits_custom_subparser.add_argument("-l", action='store_true',
-                                 help="list all available custom commands",
-                                 required=False)
+gits_custom_subparser.add_argument(
+    "command",
+    help="command to be used to execute sequence of custom commands"
+)
+gits_custom_subparser.add_argument(
+    "--create", action='store_true',
+    help="create a new custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-c", action='store_true',
+    help="create a new custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--update", action='store_true',
+    help="update the existing custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-u",
+    action='store_true',
+    help="update the existing custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--delete",
+    action='store_true',
+    help="delete a custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-d",
+    action='store_true',
+    help="delete a custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--reset",
+    action='store_true',
+    help="delete all custom commands",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-r",
+    action='store_true',
+    help="delete all custom commands",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--list",
+    action='store_true',
+    help="list all available custom commands",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-l",
+    action='store_true',
+    help="list all available custom commands",
+    required=False
+)
 gits_custom_subparser.set_defaults(func=gits_custom)
 
 args = parser.parse_args()

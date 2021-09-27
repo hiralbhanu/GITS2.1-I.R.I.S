@@ -8,6 +8,7 @@ sys.path.insert(1, os.getcwd())
 from gits_creategoodrepo import gits_creategoodrepo
 from mock import patch
 
+
 def remove_extras(path):
     files = os.listdir(path)
     for file in files:
@@ -23,14 +24,15 @@ def remove_extras(path):
        return_value=argparse.Namespace(template="test_template"))
 def test_gits_creategoodrepo(mockvar1):
     """
-    Function to test gits creategoodrepo , success case 
+    Function to test gits creategoodrepo , success case
     """
     test_result = gits_creategoodrepo(mockvar1)
     remove_extras(".")
-    if test_result==0:
+    if test_result == 0:
         assert True, "Normal Case"
     else:
         assert False
+
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(template=None))
