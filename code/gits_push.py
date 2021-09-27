@@ -1,7 +1,8 @@
 import subprocess
 from subprocess import PIPE
 import helper
-
+import git
+from pathlib import Path
 
 def gits_push(args):
     """
@@ -29,24 +30,6 @@ def gits_push(args):
             stdout, stderr = process1.communicate()
             print(stdout.decode("utf-8"))
 
-        #Checking whether below files are present in the committed repository
-        req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
-        current_files_command = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
-        process3 = subprocess.Popen(current_files_command , stdout=PIPE, stderr=PIPE)
-        stdout, stderr = process3.communicate()
-
-        committed_files = stdout.decode("utf-8")
-        missing_files = []
-
-        for file in req_files:
-            if file not in committed_files:
-                missing_files.append(file)
-
-        if missing_files:
-            print(','.join(missing_files)+' missing in the repository')
-            return False
-
-
         print("Pushing local commits")
         push_commits = ["git", "push"]
         process2 = subprocess.Popen(push_commits, stdout=PIPE, stderr=PIPE)
@@ -54,6 +37,35 @@ def gits_push(args):
         stdout, stderr = process2.communicate()
         print(stdout.decode("utf-8"))
 
+        #Creating tests
+        #Ensure test folder exists
+        Path("test").mkdir(parents=True, exist_ok=True)
+
+        #Get the commited files
+        repo = git.Repo("")
+        lastcommit = repo.head.commit
+        commited_files = None
+        for commit in list(repo.iter_commits()):
+            if commit==lastcommit:
+                commited_files =commit.stats.files
+        #If commited files are found, check them one by one and ensure tests exist under /test
+        if commited_files:
+            for commited_file in commited_files:
+                file_path = str(commited_file)
+                print("Checking if tests exist for: "+file_path)
+                #Ignore files already in the test folder
+                if(file_path.startswith("test")):
+                    continue
+                #Check if its a python type file
+                if(file_path.endswith(".py") and not Path("test/"+file_path).is_file()):
+                    #Ensure proper test file exists
+                    print("Creating test files")
+                    Path("test/"+file_path).parent.mkdir(parents=True, exist_ok=True)
+                    f = open("test/"+file_path, "w")
+                    f.write("#Test for "+file_path)
+                    f.close()
+                    
+                
     except Exception as e:
         print("ERROR: gits push command caught an exception")
         print("ERROR: {}".format(str(e)))
