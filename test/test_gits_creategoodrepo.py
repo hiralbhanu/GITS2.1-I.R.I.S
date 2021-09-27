@@ -36,7 +36,7 @@ def test_gits_creategoodrepo(mockvar1):
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(template=None))
-def test_gits_creategoodrepo(mockvar1):
+def test_gits_creategoodrepo_novar_sadcase(mockvar1):
     """
     Function to test gits creategoodrepo without any args
     """
