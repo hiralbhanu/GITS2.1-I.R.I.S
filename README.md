@@ -1,6 +1,6 @@
 
-# I.R.I.S
-### Ideal ReposItory for Software projects
+# GITS2.0 - I.R.I.S
+### GITS2.0 - Ideal ReposItory for Software projects
 
 ![GitHub](https://img.shields.io/github/license/sak007/GITS)
 [![Build Status](https://travis-ci.com/sak007/GITS.svg?branch=master)](https://travis-ci.com/sak007/GITS)
@@ -13,7 +13,7 @@
 
 ![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS)
 
-# About I.R.I.S
+# About GITS2.0 - I.R.I.S
 "Your repo is your resume. But what is a good looking repo?"
 
 So you want to start a Project on Github. Ever wondered what makes a project repository good?
@@ -25,7 +25,7 @@ Worry not. I.R.I.S is here.
 
 I.R.I.S (Ideal ReposItory for Software projects) is a tool which can help developers align their repos as per the standards defined in Software Engineering.
 
-You don't have to worry about whether you missed to add a test case, or scratch your head on what more files/functionalities are needed to make your repository look good.
+You don't have to worry about missing a test case, or scratch your head on what more files or functionalities are needed to make your repository look good.
 
 I.R.I.S streamlines your repository as per the Software Engineering Standards, so that your repository has all the necessary Structure to be called a "Good Repo".
 
