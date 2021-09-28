@@ -12,9 +12,11 @@ BASHRC=~/.bashrc
 if [ -f "$BASHRC" ]; then
     echo "$BASHRC exists, appending gits commandline tool alias"
     echo "alias gits=\"python3 $GITS_EXEC_PATH\"" >> $BASHRC
+    echo "export GITS_HOME=${PROJECT_DIR}" >> $BASHRC
 else
     echo "$BASHRC does not exist, creating a new file and adding gits commandline tool alias"
     echo "alias gits=\"python3 $GITS_EXEC_PATH\"" >> $BASHRC
+    echo "export GITS_HOME=${PROJECT_DIR}" >> $BASHRC
 fi
 
 echo "Initialising gits directory in user home directory"
