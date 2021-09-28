@@ -1,5 +1,5 @@
 
-# GITS 
+# GITS
 ### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/harshitpatel96/GITS)
@@ -24,7 +24,7 @@ Git-Simplified AKA GITS can be thought of wrapper around major Git functionaliti
 1. Clone GITS Repo
 2. From the root directory run the following command
     ```
-    pip install -r requirements.txt
+    bash requirements.sh
     ```
 3. Go to configurations directory and run the following command
 
@@ -40,17 +40,14 @@ Git-Simplified AKA GITS can be thought of wrapper around major Git functionaliti
     ```
     source ~/.bashrc
     ```
-    
+
     Note: Open the .bashrc file in User home directory to make sure that the alias command does not have any white spaces in the path. If so, rename the directory to remove the white spaces and re-run the setup.
 
 # Installation for Windows
 1. Clone GITS Repo
-2. From the root directory run the following command
-    ```
-    pip install -r requirements.txt
-    ```
-3. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows 
-although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a 
+
+2. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows
+although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a
 virtual machine might be preferred.
 
     Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
@@ -84,13 +81,13 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 
 ## Pydoc implementation
-We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
-For example if you want to go through all the documentation for all files in code/ directory, do the following: 
+We have tried to write as much documentation as possible. You can use pydoc to go through the documentation.
+For example if you want to go through all the documentation for all files in code/ directory, do the following:
 
 `cd code`<br>
 `python3 -m pydoc -b `
 
-This will open up a browser and you can see all the files. You can click on a particular file to access the 
+This will open up a browser and you can see all the files. You can click on a particular file to access the
 documentation associated with that file.
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
@@ -98,7 +95,7 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 ## Experimentation setup for phase 3
 
-This project aims to ease the developers efforts while interacting with version control system Git. 
+This project aims to ease the developers efforts while interacting with version control system Git.
 Here are few motivation points behind coming up with this idea:
 - Few git command names are very misleading from the end user's perspective. Consider this, ```git checkout``` command is used for both switching the branches and removing changes present inside working directory.
 - Based on the development practice used by various teams, there are some tasks which requires the execution of more than one command to complete the task. This process can be easily automated such that developer only need to execute a single command to get their work done.
@@ -109,10 +106,10 @@ So, this experiment aims to compare various aspects to traditional git and our p
 
 ### Participation
 
-Basic idea here is to let the participants finish the tasks present in the tasks list mentioned below, and observe whether gits made this process easier or not. 
+Basic idea here is to let the participants finish the tasks present in the tasks list mentioned below, and observe whether gits made this process easier or not.
 This is higher level idea for this study.
 There are two ways to choose who will use git and who will use gits.
-1. If you have significant number of participants, you can divide them up into two groups. Participants from one group will use Gits to complete the set of tasks while participants from second group will use traditional Git to finish their tasks. 
+1. If you have significant number of participants, you can divide them up into two groups. Participants from one group will use Gits to complete the set of tasks while participants from second group will use traditional Git to finish their tasks.
 to achieve some great results, participants with lesser git knowledge should be assigned to later group who will be using git to finish their task. That would lessen the bias in observations since people would be already familiar with git rather than gits.
 2. If number of participants are limited and have enough time, you can let each participants finish the set of tasks twice. Once using traditional git and then using gits.
 However, to remove any unwanted bias here as well, divide the participants in two groups. first group should use the git first and then gits. Second group should finish the tasks using gits first and then using git.
@@ -120,7 +117,7 @@ However, to remove any unwanted bias here as well, divide the participants in tw
 Ask each participants to setup the gits inside their local machine before starting the study using steps shown above.
 
 ### Tasks list
-Here is basic draft of the tasks that covers almost each enhancement. 
+Here is basic draft of the tasks that covers almost each enhancement.
 Feel free to edit this list as per your convenience. Add few tasks if you got more time for the experiment.
 
 - Create a test repository that can be used by participants to complete their tasks.
