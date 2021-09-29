@@ -2,6 +2,7 @@ import subprocess
 from subprocess import PIPE
 import helper
 
+
 def gits_push(args):
     """
     This function is used to push local changes to remote branch.
@@ -43,8 +44,6 @@ def gits_push(args):
         # if missing_files:
         #     print(','.join(missing_files)+' missing in the repository')
         #     return False
-
-
         print("Pushing local commits")
         push_commits = ["git", "push"]
         process2 = subprocess.Popen(push_commits, stdout=PIPE, stderr=PIPE)
@@ -61,4 +60,3 @@ def gits_push(args):
         return False
 
     return True
-

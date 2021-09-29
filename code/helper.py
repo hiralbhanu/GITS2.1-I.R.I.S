@@ -6,6 +6,7 @@ import subprocess
 import git
 from pathlib import Path
 
+
 def get_current_branch():
     """
     This function returns current checked out branch.
@@ -52,6 +53,7 @@ def get_trunk_branch_name():
         print("error occured while getting trunk branch name!")
         return None
 
+
 def get_push_createtests():
     # Creating tests
     # Get the commited files
@@ -83,5 +85,3 @@ def get_push_createtests():
                     f = open("test/" + file_path, "w")
                     f.write("#Test for " + file_path)
                     f.close()
-
-
