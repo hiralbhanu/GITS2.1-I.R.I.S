@@ -2,16 +2,16 @@
 # GITS2.0 - I.R.I.S
 ### GITS2.0 - Ideal ReposItory for Software projects
 
-![GitHub](https://img.shields.io/github/license/sak007/GITS)
-[![Build Status](https://travis-ci.com/sak007/GITS.svg?branch=master)](https://travis-ci.com/sak007/GITS)
-[![codecov](https://codecov.io/gh/sak007/GITS/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://codecov.io/gh/sak007/GITS/)
+![GitHub](https://img.shields.io/github/license/sak007/GITS2.0-I.R.I.S)
+[![Build Status](https://api.travis-ci.com/sak007/GITS2.0-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)
+[![codecov](https://codecov.io/gh/sak007/GITS2.0-I.R.I.S/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://app.codecov.io/gh/sak007/GITS2.0-I.R.I.S)
 
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
 
-![GitHub issues](https://img.shields.io/github/issues/sak007/GITS)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS)
+![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)
 
-![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS)
+![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.9-I.R.I.S)
 
 # About GITS2.0 - I.R.I.S
 "Your repo is your resume. But what is a good looking repo?"
@@ -50,13 +50,14 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 5. Create a custom command to work with Git and make development fun.
 
 
-## Experimentation setup for phase 2
+## Experimentation setup for Phase 2
 (Please check the Projects Tab to see how you can make the project better)
 
 This project aims to ease the developers efforts while working on their project repos. I.R.I.S makes their work easier and saves time by providing all the necessary default files in the required structure to ensure that the developers can focus on making their project better and not worry about the repository.
 
 Here are few motivation points behind coming up with this idea:
-- When working on one of the homeworks for the course, we realised the dearth of project repos which adhere to the standard structure.
+- Sometimes when you're working with different files and branches, there are way too many commands which need to be updated in an order. Using a custom command, which can do multiple commands at the same time in a specific order saves time and effort from the developer.
+- When working on one of the homeworks for the course, we realised the dearth in project repos which adhere to the standard structure.
 - Even if the Idea is good, developers miss out on making a good impression due to the inability to make the projects transferable and easily-usable.
 
 To solve the issues described above, we came up with the project **I.R.I.S** that stands for **Ideal ReposItory for Software projects**.
