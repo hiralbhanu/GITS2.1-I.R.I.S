@@ -220,30 +220,6 @@ gits_custom_subparser.add_argument(
     help="delete a custom command",
     required=False
 )
-gits_custom_subparser.add_argument(
-    "--reset",
-    action='store_true',
-    help="delete all custom commands",
-    required=False
-)
-gits_custom_subparser.add_argument(
-    "-r",
-    action='store_true',
-    help="delete all custom commands",
-    required=False
-)
-gits_custom_subparser.add_argument(
-    "--list",
-    action='store_true',
-    help="list all available custom commands",
-    required=False
-)
-gits_custom_subparser.add_argument(
-    "-l",
-    action='store_true',
-    help="list all available custom commands",
-    required=False
-)
 gits_custom_subparser.set_defaults(func=gits_custom)
 
 args = parser.parse_args()

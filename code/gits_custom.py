@@ -44,14 +44,6 @@ def _run(cmd, path):
         print(stdout.decode("UTF-8"))
 
 
-def _reset():
-    pass
-
-
-def _list():
-    pass
-
-
 def gits_custom(args):
     try:
         home = os.environ['GITS_HOME'] + "/resources/custom/"
@@ -62,10 +54,6 @@ def gits_custom(args):
             _update(args.command, path)
         elif args.delete or args.d:
             _delete(args.command, path)
-        elif args.reset or args.r:
-            _reset()
-        elif args.list or args.l:
-            _list()
         else:
             _run(args.command, path)
     except Exception as e:
