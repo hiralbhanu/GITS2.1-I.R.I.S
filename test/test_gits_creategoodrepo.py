@@ -2,6 +2,7 @@ import argparse
 import sys
 import os
 import shutil
+import pytest
 
 sys.path.insert(1, os.getcwd())
 
@@ -20,6 +21,7 @@ def remove_extras(path):
             os.remove(file)
 
 
+@pytest.mark.skip(reason="gh has to be installed before testing this")
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(template="test_template"))
 def test_gits_creategoodrepo(mockvar1):
@@ -34,6 +36,7 @@ def test_gits_creategoodrepo(mockvar1):
         assert False
 
 
+@pytest.mark.skip(reason="gh has to be installed before testing this")
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(template=None))
 def test_gits_creategoodrepo_novar_sadcase(mockvar1):
