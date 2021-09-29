@@ -46,40 +46,40 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 
 ## Adding new command
 
-1. Create a new file in <PROJECT HOME>/code/gits_<command name>.py
+1. Create a new file in _PROJECT HOME_/code/gits_<command name>.py
 2. Follow the template below to create a new command and update the values in
-  <text> with appropriate values
+  _text_ with appropriate values
 
     ```
     from subprocess import Popen, PIPE
     import gits_logging
 
-    def gits_<command name>(args):
+    def gits__command name_(args):
         try:
             #Repeat the following code to execute multiple commands
-            command = "<command to be executed>"
+            command = "_command to be executed_"
             process_commands = command.split()
             process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
         except Exception as e:
-            gits_logging.gits_logger.error("gits <command name> command caught an "
+            gits_logging.gits_logger.error("gits _command name_ command caught an "
                 + "exception")
             gits_logging.gits_logger.error("{}".format(str(e)))
-            print("ERROR: gits <command name> command caught an exception")
+            print("ERROR: gits _command name_ command caught an exception")
             print("ERROR: {}".format(str(e)))
             return False
         return True
     ```
-3. Add the following entries in <PROJECT HOME>/code/gits.py
+3. Add the following entries in _PROJECT HOME_/code/gits.py
 
     ```
-    from gits_<command name> import gits_<command name>
+    from gits__command name_ import gits__command name_
     .
     .
-    gits_<command name>_subparser = subparsers.add_parser("<command name>")
-    gits_<command name>_subparser.add_argument("<argument variable1>", help = "<description of the variable>")
-    gits_<command name>_subparser.add_argument("<argument variable2>", help = "<description of the variable>")
+    gits__command name__subparser = subparsers.add_parser("_command name_")
+    gits__command name__subparser.add_argument("<argument variable1>", help = "_description of the variable_")
+    gits__command name__subparser.add_argument("<argument variable2>", help = "_description of the variable_")
     .
     .
-    gits_<command name>_subparser.set_defaults(func=gits_<command name>)
+    gits__command name__subparser.set_defaults(func=gits__command name_)
     ```
