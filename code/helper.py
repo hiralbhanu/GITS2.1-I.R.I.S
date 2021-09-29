@@ -81,8 +81,8 @@ def get_push_createtests():
                 test_file_path = ""
 
                 tokenized_path = str(file_path).split("/")
-                if(len(tokenized_path)>1):
-                    test_file_path = Path("test/" + "/".join(tokenized_path[:-1]) +"/test_"+ tokenized_path[-1])
+                if(len(tokenized_path) > 1):
+                    test_file_path = Path("test/" + "/".join(tokenized_path[:-1]) + "/test_" + tokenized_path[-1])
                 else:
                     test_file_path = Path("test/test_" + file_path)
                 if(file_path.endswith(".py") and not test_file_path.is_file()):
