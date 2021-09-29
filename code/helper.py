@@ -78,10 +78,17 @@ def get_push_createtests():
                 if(file_path.startswith("test")):
                     continue
                 # Check if its a python type file
-                if(file_path.endswith(".py") and not Path("test/" + file_path).is_file()):
+                test_file_path = ""
+
+                tokenized_path = str(file_path).split("/")
+                if(len(tokenized_path)>1):
+                    test_file_path = Path("test/" + "/".join(tokenized_path[:-1]) +"/test_"+ tokenized_path[-1])
+                else:
+                    test_file_path = Path("test/test_" + file_path)
+                if(file_path.endswith(".py") and not test_file_path.is_file()):
                     # Ensure proper test file exists
                     print("Creating test files")
-                    Path("test/" + file_path).parent.mkdir(parents=True, exist_ok=True)
-                    f = open("test/" + file_path, "w")
+                    test_file_path.parent.mkdir(parents=True, exist_ok=True)
+                    f = open(test_file_path, "w")
                     f.write("#Test for " + file_path)
                     f.close()
