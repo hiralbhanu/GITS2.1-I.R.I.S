@@ -8,8 +8,8 @@
 
 [![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
 
-![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)
+[![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.0-I.R.I.S)
 
