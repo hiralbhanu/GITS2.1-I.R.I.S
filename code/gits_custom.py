@@ -2,7 +2,6 @@ from subprocess import Popen, PIPE, call
 import gits_logging
 import os
 
-home = os.environ['GITS_HOME'] + "/resources/custom/"
 
 def _create(cmd, path):
     if not os.path.exists(path):
@@ -55,6 +54,7 @@ def _list():
 
 def gits_custom(args):
     try:
+        home = os.environ['GITS_HOME'] + "/resources/custom/"
         path = home + "custom_cmd_" + args.command
         if args.create or args.c:
             _create(args.command, path)
