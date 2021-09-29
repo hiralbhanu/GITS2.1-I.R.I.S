@@ -72,7 +72,7 @@ Here are some measures that can help compare the results between traditional Git
 3. The default template followed for most files, so that even the most layman developer can ensure that his repo adheres to the Standard.
 
 # Team Members
-This repository is made for CSC 510 Software Engineering Course at NC State University.
+This repository is made for CSC 510 Software Engineering Course at NC State University for Fall 2021.
 
 Members 
 1. Ashok Kumar Selvam
