@@ -43,7 +43,7 @@ def gits_push(args):
                 missing_files.append(file)
 
         if missing_files:
-            print('Warning! ' + ','.join(missing_files)+' missing in the repository')
+            print('Warning! ' + ','.join(missing_files) + ' missing in the repository')
 
         print("Pushing local commits")
         push_commits = ["git", "push"]
