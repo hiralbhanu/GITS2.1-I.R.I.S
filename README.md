@@ -1,6 +1,6 @@
 
 # GITS2.0 - I.R.I.S
-### GITS2.0 - Ideal ReposItory for Software projects
+### GITS2.0 - I.R.I.S (Ideal ReposItory for Software projects)
 
 ![GitHub](https://img.shields.io/github/license/sak007/GITS2.0-I.R.I.S)
 [![Build Status](https://api.travis-ci.com/sak007/GITS2.0-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)

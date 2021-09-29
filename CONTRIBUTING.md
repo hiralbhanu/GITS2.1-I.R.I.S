@@ -1,4 +1,4 @@
-# Contributing to GITS2.0 - Ideal ReposItory for Software projects (I.R.I.S)
+# Contributing to GITS2.0 - I.R.I.S (Ideal ReposItory for Software projects)
 
 Thank you so much for taking an interest in contributing! There are many ways to contribute to this project.
 
