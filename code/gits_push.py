@@ -30,20 +30,20 @@ def gits_push(args):
             print(stdout.decode("utf-8"))
 
         # Checking whether below files are present in the committed repository
-         req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
-         current_files_command = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
-         process3 = subprocess.Popen(current_files_command , stdout=PIPE, stderr=PIPE)
-         stdout, stderr = process3.communicate()
+        req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
+        current_files_command = ["git","ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
+        process3 = subprocess.Popen(current_files_command , stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process3.communicate()
 
-         committed_files = stdout.decode("utf-8")
-         missing_files = []
+        committed_files = stdout.decode("utf-8")
+        missing_files = []
 
-         for file in req_files:
-             if file not in committed_files:
-                 missing_files.append(file)
+        for file in req_files:
+            if file not in committed_files:
+                missing_files.append(file)
 
-         if missing_files:
-             print('Warning! '+','.join(missing_files)+' missing in the repository')
+        if missing_files:
+            print('Warning! '+','.join(missing_files)+' missing in the repository')
 
         print("Pushing local commits")
         push_commits = ["git", "push"]
