@@ -20,12 +20,15 @@ So you want to start a Project on Github. Ever wondered what makes a project rep
 What makes your project stand apart when collaborating with multiple developers?
 What would ensure that your project is well documented and readable to other developers who might try to work on this in the future?
 
+    bash requirements.sh
 
 Worry not. I.R.I.S is here.
 
 I.R.I.S (Ideal ReposItory for Software projects) is a tool which can help developers align their repos as per the standards defined in Software Engineering.
 
 You don't have to worry about missing a test case, or scratch your head on what more files or functionalities are needed to make your repository look good.
+
+2. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows
 
 I.R.I.S streamlines your repository as per the Software Engineering Standards, so that your repository has all the necessary Structure to be called a "Good Repo".
 

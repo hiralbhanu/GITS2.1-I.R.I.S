@@ -28,6 +28,8 @@ from gits_diff import gits_diff
 from gits_branch import gits_branch
 from gits_init import gits_init
 from gits_pull import gits_pull
+from gits_creategoodrepo import gits_creategoodrepo
+from gits_custom import gits_custom
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -175,6 +177,50 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
                                  help="you can specify the branch you want to pull",
                                  required=False)
 gits_pull_subparser.set_defaults(func=gits_pull)
+
+gits_creategoodrepo_subparser = subparsers.add_parser("creategoodrepo")
+gits_creategoodrepo_subparser.add_argument("repo_name", help="name of the repo")
+gits_creategoodrepo_subparser.set_defaults(func=gits_creategoodrepo)
+
+gits_custom_subparser = subparsers.add_parser("custom")
+gits_custom_subparser.add_argument(
+    "command",
+    help="command to be used to execute sequence of custom commands"
+)
+gits_custom_subparser.add_argument(
+    "--create", action='store_true',
+    help="create a new custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-c", action='store_true',
+    help="create a new custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--update", action='store_true',
+    help="update the existing custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-u",
+    action='store_true',
+    help="update the existing custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "--delete",
+    action='store_true',
+    help="delete a custom command",
+    required=False
+)
+gits_custom_subparser.add_argument(
+    "-d",
+    action='store_true',
+    help="delete a custom command",
+    required=False
+)
+gits_custom_subparser.set_defaults(func=gits_custom)
 
 args = parser.parse_args()
 args.func(args)
