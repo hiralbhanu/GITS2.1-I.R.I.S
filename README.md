@@ -11,7 +11,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)
 
-![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.9-I.R.I.S)
+![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.0-I.R.I.S)
 
 # About GITS2.0 - I.R.I.S
 "Your repo is your resume. But what is a good looking repo?"
