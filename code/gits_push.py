@@ -17,7 +17,7 @@ def gits_push(args):
         print(stdout.decode("utf-8"))
 
         if stdout != b'':
-            print("Note: Please commit uncommited changes")
+            print("Note: Please commit the uncommited changes with path: " + stdout.decode("utf-8"))
             return False
 
         _ = helper.get_current_branch()
