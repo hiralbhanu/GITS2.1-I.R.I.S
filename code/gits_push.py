@@ -52,9 +52,6 @@ def gits_push(args):
         stdout, stderr = process2.communicate()
         print(stdout.decode("utf-8"))
 
-        # Try to create tests
-        helper.get_push_createtests()
-
     except Exception as e:
         print("ERROR: gits push command caught an exception")
         print("ERROR: {}".format(str(e)))
