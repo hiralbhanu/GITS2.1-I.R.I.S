@@ -3,6 +3,7 @@
 import gits_logging
 from subprocess import PIPE
 import subprocess
+import helper
 
 
 def gits_add_func(args):
@@ -27,6 +28,9 @@ def gits_add_func(args):
             process = subprocess.Popen(
                 subprocess_command, stdout=PIPE, stderr=PIPE)
             stdout, stderr = process.communicate()
+
+        # Try to create tests
+        helper.get_push_createtests()
 
     except Exception as e:
         gits_logging.gits_logger.error("gits add command caught an exception")

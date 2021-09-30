@@ -2,7 +2,6 @@ import subprocess
 from subprocess import PIPE
 import helper
 
-
 def gits_push(args):
     """
     This function is used to push local changes to remote branch.
@@ -50,10 +49,7 @@ def gits_push(args):
         process2 = subprocess.Popen(push_commits, stdout=PIPE, stderr=PIPE)
 
         stdout, stderr = process2.communicate()
-        print(stdout.decode("utf-8"))
-
-        # Try to create tests
-        helper.get_push_createtests()
+        print(stdout.decode("utf-8"))        
 
     except Exception as e:
         print("ERROR: gits push command caught an exception")
