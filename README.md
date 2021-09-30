@@ -35,9 +35,41 @@ I.R.I.S streamlines your repository as per the Software Engineering Standards, s
 I.R.I.S can be thought of a base repo to make sure your project repo fits the bill.
 
 # Installation Setup
-## On Windows Machines
 
 ## On Linux/MacOS Machines
+1. Clone GITS Repo
+2. From the root directory run the following command
+    ```
+    pip install -r requirements.txt
+    ```
+3. Go to configurations directory and run the following command
+
+    If you are working on Linux system with a bash terminal or a Windows system using Windows subsystem for linux:
+    ```
+    bash project_init.sh
+    ```
+    If you are working on Linux system with a fish terminal:
+    ```
+    fish project_init.fish
+    ```
+4. Source the bashrc file
+    ```
+    source ~/.bashrc
+    ```
+    
+    Note: Open the .bashrc file in User home directory to make sure that the alias command does not have any white spaces in the path. If so, rename the directory to remove the white spaces and re-run the setup.
+
+## Installation for Windows
+1. Clone GITS Repo
+2. From the root directory run the following command
+    ```
+    pip install -r requirements.txt
+    ```
+3. Currently, this project cannot be run on Windows. You need to make use of WSL to work on this project in Windows 
+although this fix would only work for systems running Windows 10. If you are using another version of Windows, using a 
+virtual machine might be preferred.
+
+    Please refer this link to enable WSL : https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 # How to Contribute?
 Please take a look at our CONTRIBUTING.md where we provide instructions on contributing to the repo and help us in enhancing the current video conferencing platforms.
