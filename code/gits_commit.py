@@ -2,6 +2,7 @@
 
 from subprocess import PIPE
 import subprocess
+import helper
 
 
 def gits_commit_func(args):
@@ -32,6 +33,9 @@ def gits_commit_func(args):
             subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         print("your changes committed successfully.")
+
+        # Try to create tests
+        helper.get_push_createtests()
 
     except Exception as e:
         print("ERROR: gits commit command caught an exception")
