@@ -9,6 +9,7 @@ The code that implements this gits functionality is located [here](https://githu
 1. gits_creategoodrepo(args):
 This function takes one mandatory argument as an input. 
 This argument is **new repo name** which is the name of the new repo the user wants to create with the good repo template.
+The default good repo template is set up as a public github template available here - [Good Repo Template](https://github.com/sak007/goodRepo_template).
 
 # How to run it? (Small Example)
 In a new folder (where there are no other git repos), you can create a new good repo with the following command:
