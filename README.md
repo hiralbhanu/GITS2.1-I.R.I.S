@@ -5,7 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/sak007/GITS2.0-I.R.I.S)
 [![Build Status](https://api.travis-ci.com/sak007/GITS2.0-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)
 [![codecov](https://codecov.io/gh/sak007/GITS2.0-I.R.I.S/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://app.codecov.io/gh/sak007/GITS2.0-I.R.I.S)
-[![DOI](https://zenodo.org/badge/295480790.svg)](https://zenodo.org/badge/latestdoi/295480790)
+[![DOI](https://zenodo.org/badge/405121886.svg)](https://zenodo.org/badge/latestdoi/405121886)
 [![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
 ![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.0-I.R.I.S)
