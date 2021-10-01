@@ -1,4 +1,4 @@
-|What | Notes|score 0..4<br>(0 = none, 1 = a litte, 2 = somewhat, 3 = a lot|
+|What | Notes| Score 0-3<br>(0 = none, 1 = a litte, 2 = somewhat, 3 = a lot|
 |-----|------|------|
 |Misc | Group members attended Tutorial sessions|3|
 |Distrbuted dev model: | Decisions made by unanmyous vote|3|
