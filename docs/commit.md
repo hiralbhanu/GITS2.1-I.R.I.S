@@ -1,5 +1,5 @@
 # About gits commit
-This command is used to commit changes present inside the staging area. 
+This command is used to commit changes present inside the staging area. It is also responsible for checking the test files in the repository. If the test files are missing, it will create a test file with test cases and check if the test cases are getting passed. 
 
 # Location of Code
 The code that implements the above mentioned gits functionality is located [here](https://github.com/harshitpatel96/GITS/blob/master/code/gits_commit.py).

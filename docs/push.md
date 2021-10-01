@@ -1,5 +1,5 @@
 # About gits push
-This function allows user to push local commits to remote branch.
+This function allows user to push local commits to remote branch. While pushing the commit, it checks whether the good repo files are present in the committed repository.
 
 # Location of Code
 The code that implements this gits functionality is located [here](https://github.com/harshitpatel96/GITS/blob/master/code/gits_push.py)
