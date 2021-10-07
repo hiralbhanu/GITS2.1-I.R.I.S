@@ -33,6 +33,8 @@ I.R.I.S can be thought of a base repo to make sure your project repo fits the bi
 
 ![](https://media.giphy.com/media/Lp8kVSwaSU6V9oATDM/giphy.gif)
 
+Project Video: https://drive.google.com/file/d/144ekqa0HfZCaBmgvpJX8RFPCL67q6nQl/view?usp=sharing
+
 
 # Installation Setup
 
