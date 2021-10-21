@@ -1,16 +1,16 @@
 
-# GITS2.0 - I.R.I.S
-### GITS2.0 - I.R.I.S (Ideal ReposItory for Software projects)
+# GITS2.1 - I.R.I.S
+### GITS2.1 - I.R.I.S (Ideal ReposItory for Software projects)
 
-![GitHub](https://img.shields.io/github/license/sak007/GITS2.0-I.R.I.S)
-[![Build Status](https://api.travis-ci.com/sak007/GITS2.0-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)
-[![codecov](https://codecov.io/gh/sak007/GITS2.0-I.R.I.S/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://app.codecov.io/gh/sak007/GITS2.0-I.R.I.S)
-[![DOI](https://zenodo.org/badge/405121886.svg)](https://zenodo.org/badge/latestdoi/405121886)
-[![GitHub issues](https://img.shields.io/github/issues/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/sak007/GITS2.0-I.R.I.S)](https://github.com/sak007/GITS2.0-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
-![Lines of code](https://img.shields.io/tokei/lines/github/sak007/GITS2.0-I.R.I.S)
+![GitHub](https://img.shields.io/github/license/hiralbhanu/GITS2.1-I.R.I.S)
+[![Build Status](https://api.travis-ci.com/hiralbhanu/GITS2.1-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)
+[![codecov](https://codecov.io/gh/hiralbhanu/GITS2.1-I.R.I.S/branch/master/graph/badge.svg?token=G6RG52G2YO)](https://app.codecov.io/gh/sak007/GITS2.0-I.R.I.S)
+[![DOI](https://zenodo.org/badge/419548765.svg)](https://zenodo.org/badge/latestdoi/419548765)
+[![GitHub issues](https://img.shields.io/github/issues/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
+![Lines of code](https://img.shields.io/tokei/lines/github/hiralbhanu/GITS2.1-I.R.I.S)
 
-# About GITS2.0 - I.R.I.S
+# About GITS2.1 - I.R.I.S
 "Your repo is your resume. But what is a good looking repo?"
 
 So you want to start a Project on Github. Ever wondered what makes a project repository good?
@@ -112,8 +112,7 @@ Here are some measures that can help compare the results between traditional Git
 This repository is made for CSC 510 Software Engineering Course at NC State University for Fall 2021.
 
 Members 
-1. Ashok Kumar Selvam
-2. Rithik Jain
-3. Sri Athithya Kruth Babu
-4. Subramanian Venkataraman
-5. Zunaid Hasan Sorathiya
+1. Hiral Rajendra Bhanushali
+2. Hrushabhsingh Chouhan
+3. Neha Balram Agarwal
+4. Apoorva Chauhan
