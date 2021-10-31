@@ -1,14 +1,14 @@
 Cite as
 
-Tanay Agrawal, Amol Gautam, & Sneha192. (2020, August 16). amolgautam25/se20_group17: Initial Commit (Version v1). Zenodo.https://doi.org/10.5281/zenodo.4029213
+Hiral Bhanushali, Hrushabhsingh Chouhan, Apoorva Chauhan, Neha Agarwal (2021).  Zenodo.https://doi.org/10.5281/zenodo.4029213
 
 ```
 @article{amolgautam25:GITS,
-  title     = {se20_group17: Initial Commit (Version v1)},
-  DOI       = {10.5281/zenodo.4029213}, 
-  author    = {Tanay Agrawal, Amol Gautam, & Sneha192}, 
+  title     = {se21_group38: Initial Commit (Version v1)},
+  DOI       = {10.5281/zenodo.5630948}, 
+  author    = {Hiral Bhanushali, Hrushabhsingh Chouhan, Apoorva Chauhan, Neha Agarwal}, 
   publisher = {Zenodo}, 
-  year      = {2020}, 
-  month     = {August}
+  year      = {2021}, 
+  month     = {October}
 }
 ```
