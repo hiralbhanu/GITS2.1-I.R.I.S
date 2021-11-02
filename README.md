@@ -44,7 +44,7 @@ Project Video: https://drive.google.com/file/d/144ekqa0HfZCaBmgvpJX8RFPCL67q6nQl
     ```
     pip install -r requirements.txt
     ```
-3. Go to configurations directory and run the following command
+3. Go to configurations directory and run the following command:
 
     If you are working on Linux system with a bash terminal or a Windows system using Windows subsystem for linux:
     ```
