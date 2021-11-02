@@ -18,7 +18,7 @@ import gits_logging
 
 def gits_creategoodrepo(args):
     try:
-        process_commands = ["gh", "repo", "create", args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
+        process_commands = ["git", "init" , args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
         process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         if(process.returncode == 1):
