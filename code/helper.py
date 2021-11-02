@@ -25,7 +25,28 @@ def get_current_branch():
     except:
         print("Error occured while getting current branch name!")
         return None
+    
+def get_repo_name():
+    """
+    This function returns user name and repo name.
+    """
+    try:
+        subprocess_command = list()
+        subprocess_command.append("git")
+        subprocess_command.append("remote")
+        subprocess_command.append("-v")
+        process = subprocess.Popen(
+            subprocess_command, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process.communicate()
+        branch = stdout.decode('UTF-8')
+        repo_list = list(branch.split(" "))
+        temp = repo_list[0].split("\t")
+        repo_name = temp[1].split("/")
+        return repo_name
 
+    except:
+        print("Error occured while getting current branch name!")
+        return None
 
 def get_trunk_branch_name():
     """
