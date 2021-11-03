@@ -5,7 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/hiralbhanu/GITS2.1-I.R.I.S)
 [![Build Status](https://api.travis-ci.com/hiralbhanu/GITS2.1-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/github/sak007/GITS2.0-I.R.I.S)
 [![codecov](https://codecov.io/gh/hiralbhanu/GITS2.1-I.R.I.S/branch/master/graph/badge.svg?token=0e8b13ab-2292-4564-834f-0b44d6fb23a3)](https://codecov.io/gh/hiralbhanu/GITS2.1-I.R.I.S)
-[![DOI](https://zenodo.org/badge/419548765.svg)](https://zenodo.org/badge/latestdoi/419548765)
+[![DOI](https://zenodo.org/badge/419548765.svg)](https://zenodo.org/10.5281/zenodo.5630948)
 [![GitHub issues](https://img.shields.io/github/issues/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
 ![Lines of code](https://img.shields.io/tokei/lines/github/hiralbhanu/GITS2.1-I.R.I.S)
