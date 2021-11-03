@@ -1,7 +1,6 @@
 import subprocess
 from subprocess import PIPE
-import gits_logging
-import helper
+
 
 def gits_version(args):
     try:

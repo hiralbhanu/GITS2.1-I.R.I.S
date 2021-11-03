@@ -2,7 +2,6 @@
 
 from subprocess import PIPE
 import subprocess
-
 import git
 from pathlib import Path
 
@@ -22,10 +21,12 @@ def get_current_branch():
         stdout, stderr = process.communicate()
         branch = stdout.decode('UTF-8')
         return branch.rstrip()
+
     except:
         print("Error occured while getting current branch name!")
         return None
-    
+
+
 def get_repo_name():
     """
     This function returns user name and repo name.
@@ -42,11 +43,13 @@ def get_repo_name():
         repo_list = list(branch.split(" "))
         temp = repo_list[0].split("\t")
         repo_name = temp[1].split("/")
+
         return repo_name
 
     except:
         print("Error occured while getting current branch name!")
         return None
+
 
 def get_trunk_branch_name():
     """
