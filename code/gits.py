@@ -187,7 +187,7 @@ gits_list_subparser.set_defaults(func= gits_list_commands)
 
 gits_version_subparser = subparsers.add_parser("version")
 
-gits_version_subparser.set_defaults(func= gits_versiont)
+gits_version_subparser.set_defaults(func= gits_version)
 
 
 
