@@ -113,6 +113,6 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 Members 
 1. Hiral Rajendra Bhanushali
-2. Hrushabhsingh Chouhan
+2. Hrushabhsingh Chouhan.
 3. Neha Balram Agarwal
 4. Apoorva Chauhan
