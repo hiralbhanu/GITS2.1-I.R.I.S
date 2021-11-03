@@ -30,6 +30,8 @@ from gits_init import gits_init
 from gits_pull import gits_pull
 from gits_creategoodrepo import gits_creategoodrepo
 from gits_custom import gits_custom
+from gits_list import gits_list_commands
+from gits_version import gits_version
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -177,6 +179,17 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
                                  help="you can specify the branch you want to pull",
                                  required=False)
 gits_pull_subparser.set_defaults(func=gits_pull)
+
+gits_list_subparser = subparsers.add_parser("list")
+
+gits_list_subparser.set_defaults(func= gits_list_commands)
+
+
+gits_version_subparser = subparsers.add_parser("version")
+
+gits_version_subparser.set_defaults(func= gits_versiont)
+
+
 
 gits_creategoodrepo_subparser = subparsers.add_parser("creategoodrepo")
 gits_creategoodrepo_subparser.add_argument("repo_name", help="name of the repo")
