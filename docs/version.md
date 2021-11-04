@@ -2,7 +2,7 @@
 This function allows user to get the git version.
 
 # Location of Code
-The code that implements this gits functionality is located [here](https://github.com/harshitpatel96/GITS/blob/master/code/gits_version.py)
+The code that implements this gits functionality is located [here](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/tree/master/code/gits_version.py)
 
 # Code Description
 ## Functions
