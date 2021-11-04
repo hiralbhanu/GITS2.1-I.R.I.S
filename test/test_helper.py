@@ -24,10 +24,10 @@ def test_get_repo_name_happy_case(mock_var):
     assert "testrepo" == test_result_repo, "Normal case"
     
     
-  @patch("subprocess.Popen")
+@patch("subprocess.Popen")
 def test_get_repo_name_happy_case_2(mock_var):
     """
-    Function to test fetching repo name and branch name, success case
+    Function to test fetching repo name and user name, success case
     """
     mocked_pipe = Mock()
     attrs = {'communicate.return_value': ('output'.encode('UTF-8'), 'error'), 'returncode': 0}
@@ -40,6 +40,21 @@ def test_get_repo_name_happy_case_2(mock_var):
     assert type(test_result[1]) == str, "Normal case"
 
 
+@patch("subprocess.Popen")
+def test_get_repo_name_happy_case_3(mock_var):
+    """
+    Function to test fetching repo name and user name, success case
+    """
+    mocked_pipe = Mock()
+    attrs = {'communicate.return_value': ('output'.encode('UTF-8'), 'error'), 'returncode': 0}
+    mocked_pipe.configure_mock(**attrs)
+    mock_var.return_value = mocked_pipe
+
+    test_result = get_repo_name()
+
+    assert type(test_result) == list, "Normal case"
+    
+    
 @patch("subprocess.Popen")
 def test_get_current_branch_sad_case(mock_var):
     """
