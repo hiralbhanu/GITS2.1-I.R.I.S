@@ -32,6 +32,7 @@ from gits_creategoodrepo import gits_creategoodrepo
 from gits_custom import gits_custom
 from gits_list import gits_list_commands
 from gits_version import gits_version
+from gits_countcommits import count_commits
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -179,6 +180,9 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
                                  help="you can specify the branch you want to pull",
                                  required=False)
 gits_pull_subparser.set_defaults(func=gits_pull)
+
+gits_countcommits_subparser = subparsers.add_parser("countcommits")
+gits_countcommits_subparser.set_defaults(func=count_commits)
 
 gits_list_subparser = subparsers.add_parser("list")
 gits_list_subparser.set_defaults(func=gits_list_commands)
