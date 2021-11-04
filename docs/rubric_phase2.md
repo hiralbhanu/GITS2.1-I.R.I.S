@@ -18,9 +18,9 @@
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | |3|
 |.5|test cases exist  |https://github.com/hiralbhanu/GITS2.1-I.R.I.S/tree/master/test|3|
 |.5|Use of code coverage  | config files in GH|
-|.5|other automated analysis tools  | config files in GH|
+|.5|other automated analysis tools  | config files in GH|1|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. |https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues/7|3|
-|.5|test cases are routinely executed | e.g. travis-com.com or github actions or something|
+|.5|test cases are routinely executed | travis-com.com |3|
 |1|Documentation describing how this version improves on the older version| https://github.com/hiralbhanu/GITS2.1-I.R.I.S/blob/master/tasks.md | 3|
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 
 |16| Total|
