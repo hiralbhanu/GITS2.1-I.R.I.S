@@ -53,7 +53,7 @@ Figured why git command can not be automated to create a good repo and closed th
 
 
 # Deliverables for phase 3:
-1. Enhance create good repo to work with multiple licenses
-2. Custom command listing 
-3. Score Calculation Feature to see how much the repo matches with the ideal repo structure
-4. With implemented new feature to count the total number of commits of a given repository
+1. INSTALLATION ISSUES - fix installation for windows. The project should also run on Windows (fix installation issue for windows )
+3. CUSTOM COMMANDS - custom commands - reset (delete)
+4. Automated test cases
+5. Test cases in different languages 
