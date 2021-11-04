@@ -15,7 +15,7 @@
 |1|Issues reports: there are many  |https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues|3|
 |.5|Use of code formatters. |Flake8 (https://github.com/hiralbhanu/GITS2.1-I.R.I.S/blob/master/.travis.yml)|3|
 |.5|Use of style checkers | Flake8 (https://github.com/hiralbhanu/GITS2.1-I.R.I.S/blob/master/.travis.yml)|3|
-|.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | |3|
+|.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. |https://user-images.githubusercontent.com/43321682/140435660-cc44525f-014d-434f-9aec-0fb14e30473f.mp4 link in README.md |3|
 |.5|test cases exist  |https://github.com/hiralbhanu/GITS2.1-I.R.I.S/tree/master/test|3|
 |.5|Use of code coverage  | config files in GH|
 |.5|other automated analysis tools  | config files in GH|1|
