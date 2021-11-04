@@ -6,6 +6,7 @@ import os
 import datetime
 import git
 from tabulate import tabulate
+import logging
 
 readme_present = 0
 license_present = 0
