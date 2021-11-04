@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(1, os.getcwd())
 
-from helper import get_current_branch
+from helper import get_current_branch, get_repo_name
 from mock import patch, Mock
 
 
@@ -22,6 +22,22 @@ def test_get_repo_name_happy_case(mock_var):
     test_result_repo = test_result[1][:-4]
     assert "hrushabhchouhan" == test_result_username, "Normal case"
     assert "testrepo" == test_result_repo, "Normal case"
+    
+    
+  @patch("subprocess.Popen")
+def test_get_repo_name_happy_case_2(mock_var):
+    """
+    Function to test fetching repo name and branch name, success case
+    """
+    mocked_pipe = Mock()
+    attrs = {'communicate.return_value': ('output'.encode('UTF-8'), 'error'), 'returncode': 0}
+    mocked_pipe.configure_mock(**attrs)
+    mock_var.return_value = mocked_pipe
+
+    test_result = get_repo_name()
+
+    assert type(test_result[0]) == str, "Normal case"
+    assert type(test_result[1]) == str, "Normal case"
 
 
 @patch("subprocess.Popen")
