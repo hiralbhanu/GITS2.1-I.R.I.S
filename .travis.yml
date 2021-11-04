@@ -1,24 +1,22 @@
-language:
-  python
-python:
- - "3.8"
-install:
- - pip install -U pip
- - pip install -r requirements.txt
- - pip install coverage
- - pip install codecov
- - python -m unittest discover
-git:
-  depth: 50
 jobs:
   include:
-  - name: "project-1"
-    python: "3.8"
-script:
-  - flake8 --ignore=E501,E402,E722,F841
-  - coverage run -m pytest -q test/
-  - npm run test:single
-  - npm run check-coverage
-after_success:
-  - npm run report-coverage
-  - bash <(curl -s https://codecov.io/bash) -t 0e8b13ab-2292-4564-834f-0b44d6fb23a3
+    - language: python
+      python:
+       - "pypy3"
+      install:
+       - pip install -U pip
+       - pip install -r requirements.txt
+       - pip install coverage
+       - pip install codecov
+       - python -m unittest discover
+       - pip install pytest
+      script:
+        - cd tests
+        - pytest
+        - flake8 --ignore=E501,E402,E722,F841
+        - coverage run -m pytest -q test/
+        - npm run test:single
+        - npm run check-coverage
+      after_success:
+        - npm run report-coverage
+        - bash <(curl -s https://codecov.io/bash) -t 0e8b13ab-2292-4564-834f-0b44d6fb23a3
