@@ -18,7 +18,16 @@ import gits_logging
 
 def gits_creategoodrepo(args):
     try:
-        process_commands = ["gh", "repo", "create", args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
+        print("1. Apache\n2. MIT\n3. GNU\n")
+        license = int(input("Enter License(a number from 1-3):"))
+        if license == 1:
+            process_commands = ["gh", "repo", "create", args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
+        elif license == 2:
+            process_commands = ["gh", "repo", "create", args.repo_name, "--template", "nehaAgarwal96/goodRepo_template2", "--public", "-y"]
+        elif license == 3:
+            process_commands = ["gh", "repo", "create", args.repo_name, "--template", "hrushabhchouhan/goodRepo_template3", "--public", "-y"]
+        else:
+            process_commands = ["gh", "repo", "create", args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
         process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         if(process.returncode == 1):
