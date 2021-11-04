@@ -60,7 +60,7 @@ def file_checker():
         if(file == 'CITATION.md'):
             count += 1
             score[3] += 1
-        if(file == 'CODE_OF_CONDUCT.md'):
+        if(file == 'CODE-OF-CONDUCT.md'):
             count += 1
             score[4] += 1
         if(file == '.gitignore'):
@@ -120,7 +120,7 @@ def gits_push(args):
             print(stdout.decode("utf-8"))
 
         # Checking whether below files are present in the committed repository
-        req_files = ['README.md', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
+        req_files = ['README.md', 'CONTRIBUTING.md', 'CODE-OF-CONDUCT.md', 'LICENSE', 'CITATION.md', '.gitignore']
         current_files_command = ["git", "ls-tree", "--full-tree", "-r", "--name-only", "HEAD"]
         process3 = subprocess.Popen(current_files_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process3.communicate()
@@ -145,13 +145,13 @@ def gits_push(args):
         issue_score = issue_checker(x)
         file_count, score = file_checker()
 
-        total_score = ((issue_score + file_count) / 8) * 100
+        total_score = ((issue_score + file_count) / 7) * 100
 
         grade = calculate_grade(total_score)
 
         print("Repository grade is :", grade)
 
-        table = [['README.md', '1', score[0]], ['CONTRIBUTING.md', '1', score[1]], ['CODE_OF_CONDUCT.md', '1', score[2]], ['LICENSE.md', '1', score[3]], ['CITATION.md', '1', score[4]], ['.gitignore', '1', score[5]], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
+        table = [['README.md', '1', score[0]], ['CONTRIBUTING.md', '1', score[1]], ['CODE-OF-CONDUCT.md', '1', score[2]], ['LICENSE.md', '1', score[3]], ['CITATION.md', '1', score[4]], ['.gitignore', '1', score[5]], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
         print("\n")
         print(tabulate(table, headers=['Item', 'Weight', 'Score']))
         print("\n")
