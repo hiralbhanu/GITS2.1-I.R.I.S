@@ -53,7 +53,7 @@ Figured why git command can not be automated to create a good repo and closed th
 
 
 # Deliverables for phase 3:
-1. INSTALLATION ISSUES - fix installation for windows. The project should also run on Windows (fix installation issue for windows )
-3. CUSTOM COMMANDS - custom commands - reset (delete)
-4. Automated test cases
-5. Test cases in different languages 
+1. The project should also run on Windows (fix installation issue for windows )
+2. Create and refactor custom commands to reset(delete)
+3. Automate test cases and also implement test cases in different languages 
+
