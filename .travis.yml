@@ -13,7 +13,7 @@ jobs:
       script:
         - cd tests
         - pytest
-        - flake8 --ignore=E501,E402,E722,F841
+        - flake8 --ignore=E501,E402,E722,F841,E741
         - coverage run -m pytest -q test/
         - npm run test:single
         - npm run check-coverage
