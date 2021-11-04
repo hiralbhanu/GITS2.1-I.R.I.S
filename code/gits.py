@@ -181,15 +181,10 @@ gits_pull_subparser.add_argument("--branch", nargs="?", default=False,
 gits_pull_subparser.set_defaults(func=gits_pull)
 
 gits_list_subparser = subparsers.add_parser("list")
-
-gits_list_subparser.set_defaults(func= gits_list_commands)
-
+gits_list_subparser.set_defaults(func=gits_list_commands)
 
 gits_version_subparser = subparsers.add_parser("version")
-
-gits_version_subparser.set_defaults(func= gits_version)
-
-
+gits_version_subparser.set_defaults(func=gits_version)
 
 gits_creategoodrepo_subparser = subparsers.add_parser("creategoodrepo")
 gits_creategoodrepo_subparser.add_argument("repo_name", help="name of the repo")
