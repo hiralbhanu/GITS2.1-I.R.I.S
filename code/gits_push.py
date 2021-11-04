@@ -16,18 +16,26 @@ coc_present = 0
 
 
 def issue_checker(info):
+    try:
+        start_date = datetime.datetime.now() - datetime.timedelta(30)
+        gh_token = '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'
+        token = os.getenv('GITHUB_TOKEN', gh_token)
+        g = Github(token)
+        username = info[0][15:]
+        print(type(username))
+        repo_ = info[1][:-4]
+        print(type(repo_))
+        link = str(username + "/" + repo_)
+        print(link)
+        repo = g.get_repo(link)
+        print(repo)
+        issues = repo.get_issues(state="closed", since=start_date)
+        if len(issues.get_page(0)) >= 1:
+            return 1
+        return 0
 
-    start_date = datetime.datetime.now() - datetime.timedelta(30)
-    gh_token = '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'
-    token = os.getenv('GITHUB_TOKEN', gh_token)
-    g = Github(token)
-    username = info[0][15:]
-    repo_ = info[1][:-4]
-    repo = g.get_repo(username + '/' + repo_)
-    issues = repo.get_issues(state="closed", since=start_date)
-    if len(issues.get_page(0)) >= 1:
-        return 1
-    return 0
+    except Exception as e:
+        logging.error("Failed", exc_info=True)
 
 
 def file_checker():
