@@ -10,7 +10,7 @@
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
 ![Lines of code](https://img.shields.io/tokei/lines/github/hiralbhanu/GITS2.1-I.R.I.S)
 
-Project Video : https://user-images.githubusercontent.com/43321682/140435660-cc44525f-014d-434f-9aec-0fb14e30473f.mp4
+Project Video : https://user-images.githubusercontent.com/43321682/140435660-cc44525f-014d-434f-9aec-0fb14e30473f.mov
 
 
 # About GITS2.1 - I.R.I.S
@@ -35,8 +35,6 @@ I.R.I.S streamlines your repository as per the Software Engineering Standards, s
 I.R.I.S can be thought of a base repo to make sure your project repo fits the bill.
 
 ![](https://media.giphy.com/media/Lp8kVSwaSU6V9oATDM/giphy.gif)
-
-Project Video: https://drive.google.com/file/d/144ekqa0HfZCaBmgvpJX8RFPCL67q6nQl/view?usp=sharing
 
 
 # Installation Setup
