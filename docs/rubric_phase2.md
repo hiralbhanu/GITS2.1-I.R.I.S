@@ -8,7 +8,7 @@
 |.5|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people) | |3|
 |.5|evidence that the members of the team are working across multiple places in the code base | https://github.com/hiralbhanu/GITS2.1-I.R.I.S/commits/master|3|
 |1|Docs: what: point descriptions of each class/function (in isolation)  | https://github.com/hiralbhanu/GITS2.1-I.R.I.S/tree/master/docs|3|
-|.5|Number of commits: by different people  | in GH|
+|.5|Number of commits: by different people  | https://github.com/hiralbhanu/GITS2.1-I.R.I.S/commits/master| 3|
 |1|issues are being closed | evidence in GH|
 |.5|issues are discussed before they are closed | even if you discuss in slack, need a sumamry statement here|
 |.5|Use of syntax checkers. | config files iin GH showing this checker's config|
@@ -21,6 +21,6 @@
 |.5|other automated analysis tools  | config files in GH|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it|
 |.5|test cases are routinely executed | e.g. travis-com.com or github actions or something|
-|1|Documentation describing how this version improves on the older version| 
+|1|Documentation describing how this version improves on the older version| We have included flexibility for users to work on their preferred licences |
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 
 |16| Total|
