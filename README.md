@@ -81,9 +81,9 @@ Please take a look at our CONTRIBUTING.md where we provide instructions on contr
 
 0. Use custom commands to work with Git from your command line. 
 1. Create Default files on startup according to the Stucture.
-2. Files will be auto generated with template to give the developers an idea on what needs to be filled.
-3. Auto test case function generation whenever new code gets pushed. Developer can update the necessary tests inside the function.
-4. Score Calculation to see how much the repo matches with the ideal repo structure.
+2. Files will be auto generated with template to give the developers an idea on what needs to be filled. Also, the user is given a choice to add license in his repo from the list provided. 
+3. Score Calculation to see how much the repo matches with the ideal repo structure.
+4. Created commands to show version of Git, count commits, list all custom created commands.
 5. Create a custom command to work with Git and make development fun.
 
 
@@ -113,6 +113,6 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 Members 
 1. Hiral Rajendra Bhanushali
-2. Hrushabhsingh Chouhan.
+2. Hrushabhsingh Chouhan
 3. Neha Balram Agarwal
 4. Apoorva Chauhan
