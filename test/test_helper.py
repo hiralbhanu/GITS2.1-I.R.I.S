@@ -56,6 +56,23 @@ def test_get_repo_name_happy_case_3(mock_var):
     
     
 @patch("subprocess.Popen")
+def test_get_repo_name_sad_case(mock_var):
+    """
+    Function to test fetching repo name and branch name, failure case
+    """
+    mocked_pipe = Mock()
+    attrs = {'communicate.return_value': ('output', 'error'), 'returncode': 0}
+    mocked_pipe.configure_mock(**attrs)
+    mock_var.return_value = mocked_pipe
+
+    test_result = get_repo_name()
+    if not test_result:
+        assert False
+    else:
+        assert True
+    
+    
+@patch("subprocess.Popen")
 def test_get_current_branch_sad_case(mock_var):
     """
     Function to test fetching current branch, success case
