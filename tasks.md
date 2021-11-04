@@ -8,7 +8,7 @@ Files will be auto generated with template to give the developers an idea on wha
 
 Auto test case function generation whenever new code gets pushed. Developer can update the necessary tests inside the function.
 
-Score Calculation to see how much the repo matches with the ideal repo structure.
+Score Calculation to see how much the repo matches with the ideal repo structure
 
 Create a custom command to work with Git and make development fun.
 	
