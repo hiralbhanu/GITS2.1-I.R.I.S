@@ -8,17 +8,20 @@ from mock import patch, Mock
 
 
 @patch("subprocess.Popen")
-def test_get_current_branch_happy_case(mock_var):
+def test_get_repo_name_happy_case(mock_var):
     """
-    Function to test fetching current branch, success case
+    Function to test fetching repo name and branch name, success case
     """
     mocked_pipe = Mock()
     attrs = {'communicate.return_value': ('output'.encode('UTF-8'), 'error'), 'returncode': 0}
     mocked_pipe.configure_mock(**attrs)
     mock_var.return_value = mocked_pipe
 
-    test_result = get_current_branch()
-    assert "output" == test_result, "Normal case"
+    test_result = get_repo_name()
+    test_result_username = test_result[0][15:]
+    test_result_repo = test_result[1][:-4]
+    assert "hrushabhchouhan" == test_result_username, "Normal case"
+    assert "testrepo" == test_result_repo, "Normal case"
 
 
 @patch("subprocess.Popen")
