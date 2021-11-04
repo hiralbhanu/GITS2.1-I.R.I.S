@@ -8,13 +8,6 @@ import git
 from tabulate import tabulate
 import logging
 
-readme_present = 0
-license_present = 0
-citation_present = 0
-contribution_present = 0
-gitignore_present = 0
-coc_present = 0
-
 
 def issue_checker(info):
     try:
@@ -43,29 +36,38 @@ def file_checker():
     count = 0
     cwd = os.getcwd()
     g = git.cmd.Git(cwd)
+    readme_present = 0
+    license_present = 0
+    citation_present = 0
+    contribution_present = 0
+    gitignore_present = 0
+    coc_present = 0
+    
+    score = [0] * 6
+    
     file_list = []
     file_list = g.ls_files().split("\n")
     for file in file_list:
         if(file == 'README.md'):
             count += 1
-            readme_present = 1
+            score[0] += 1
         if(file == 'CONTRIBUTING.md'):
             count += 1
-            contribution_present = 1
+            score[1] += 1
         if(file == 'LICENSE'):
             count += 1
-            license_present = 1
+            score[2] += 1
         if(file == 'CITATION.md'):
             count += 1
-            citation_present = 1
+            score[3] += 1
         if(file == 'CODE_OF_CONDUCT.md'):
             count += 1
-            coc_present = 1
+            score[4] += 1
         if(file == '.gitignore'):
             count += 1
-            gitignore_present = 1
+            score[5] += 1
 
-    return count
+    return count, score
 
 
 def calculate_grade(score):
@@ -141,7 +143,7 @@ def gits_push(args):
         print(stdout.decode("utf-8"))
         x = helper.get_repo_name()
         issue_score = issue_checker(x)
-        file_count = file_checker()
+        file_count, score = file_checker()
 
         total_score = ((issue_score + file_count) / 8) * 100
 
@@ -149,7 +151,7 @@ def gits_push(args):
 
         print("Repository grade is :", grade)
 
-        table = [['README.md', '1', readme_present], ['CONTRIBUTING.md', '1', contribution_present], ['CODE_OF_CONDUCT.md', '1', coc_present], ['LICENSE.md', '1', license_present], ['CITATION.md', '1', citation_present], ['.gitignore', '1', gitignore_present], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
+        table = [['README.md', '1', score[0]], ['CONTRIBUTING.md', '1', score[1]], ['CODE_OF_CONDUCT.md', '1', score[2]], ['LICENSE.md', '1', score[3]], ['CITATION.md', '1', score[4]], ['.gitignore', '1', score[5]], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
         print("\n")
         print(tabulate(table, headers=['Item', 'Weight', 'Score']))
         print("\n")
