@@ -31,9 +31,16 @@ You don't have to worry about missing a test case, or scratch your head on what 
 
 I.R.I.S streamlines your repository as per the Software Engineering Standards, so that your repository has all the necessary Structure to be called a "Good Repo".
 
+
+
+
+
 I.R.I.S can be thought of a base repo to make sure your project repo fits the bill.
 
 ![](https://media.giphy.com/media/Lp8kVSwaSU6V9oATDM/giphy.gif)
+
+##Video for Delta Features
+Uploading VID-20211108-WA0001.mp4…
 
 
 # Installation Setup
@@ -60,6 +67,8 @@ I.R.I.S can be thought of a base repo to make sure your project repo fits the bi
     ```
     
     Note: Open the .bashrc file in User home directory to make sure that the alias command does not have any white spaces in the path. If so, rename the directory to remove the white spaces and re-run the setup.
+    
+    ## 
 
 ## Installation for Windows
 1. Clone GITS Repo
