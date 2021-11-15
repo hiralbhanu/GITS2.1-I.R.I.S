@@ -39,8 +39,14 @@ I.R.I.S can be thought of a base repo to make sure your project repo fits the bi
 
 ![](https://media.giphy.com/media/Lp8kVSwaSU6V9oATDM/giphy.gif)
 
-##Video for Delta Features
-Uploading VID-20211108-WA0001.mp4…
+# Video for Delta Features
+
+
+
+
+https://user-images.githubusercontent.com/47474447/141851475-3eb31270-a38e-4cd6-bf7f-7b536fd5c10a.mp4
+
+
 
 
 # Installation Setup
