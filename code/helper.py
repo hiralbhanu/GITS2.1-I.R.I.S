@@ -31,18 +31,16 @@ def get_repo_name():
     This function returns user name and repo name.
     """
     try:        
-        branch = "origin    git@github.com:hrushabhchouhan/testrepo.git"
+        branch = "origin    git@github.com:hiralbhanu/hello.git"
         repo_list = list(branch.split(" "))
         temp = repo_list[len(repo_list) - 1]
         repo_name = temp.split("/")
         info = []
         info.append(repo_name[len(repo_name) - 2])
         info.append(repo_name[len(repo_name) - 1])
-        print(info)
         return info
 
     except Exception as e:
-        print(e)
         print("Error occured while getting current repo name!")
         return None
 
