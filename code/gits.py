@@ -40,6 +40,8 @@ if not logger_status:
     sys.exit(1)
 
 parser = argparse.ArgumentParser()
+# print(str(sys.argv))
+# parser.set_defaults(func=gits_hello_world)
 subparsers = parser.add_subparsers()
 
 gits_hello_subparser = subparsers.add_parser('hello_world')
@@ -235,4 +237,6 @@ gits_custom_subparser.add_argument(
 gits_custom_subparser.set_defaults(func=gits_custom)
 
 args = parser.parse_args()
+# print(args)
 args.func(args)
+# print(args.func)

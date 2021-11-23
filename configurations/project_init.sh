@@ -1,12 +1,16 @@
 #!/bin/bash
 
 SCRIPT_DIR="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+echo "$SCRIPT_DIR"
 
 PROJECT_DIR=${SCRIPT_DIR%/*}
+echo "$PROJECT_DIR"
 
 RELATIVE_GITS_PATH="code/gits.py"
+echo "$RELATIVE_GITS_PATH"
 
 GITS_EXEC_PATH="${PROJECT_DIR}/${RELATIVE_GITS_PATH}"
+echo "$GITS_EXEC_PATH"
 
 BASHRC=~/.bashrc
 if [ -f "$BASHRC" ]; then
