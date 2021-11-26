@@ -118,9 +118,13 @@ To solve the issues described above, we came up with the project **I.R.I.S** tha
 ### Tasks list
 You can checkout the Projects Tab in GitHub to see the upcoming tasks for the Project.
 
-### Delta for Phase 2
+## Delta for Phase 2
 - [x] Initally , the software could only be implemented on MacOs or Linux Machines. Now we have made sure the commands can be executed on windows and that the software can be executed on windows platform as well.
 - [x] Also made an executable to setup the project on command line for ease of use for the user. 
+
+
+## Future Scope
+- [ ] Can add more git custom commands to improve quality of life.
 
 ### Quantitative measures
 Here are some measures that can help compare the results between traditional Git/Github Repo Creation and I.R.I.S
