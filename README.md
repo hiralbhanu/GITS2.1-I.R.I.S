@@ -13,6 +13,7 @@
 ![version](https://img.shields.io/badge/version-1.0-blue)
 [![Greetings](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/greetings.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/greetings.yml)
 [![Close as a feature](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/close_as_a_feature.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/close_as_a_feature.yml)
+![GitHub contributors](https://img.shields.io/github/contributors/jayrshah98/GITS2.1-I.R.I.S)
 
 Project Video : https://user-images.githubusercontent.com/43321682/140435660-cc44525f-014d-434f-9aec-0fb14e30473f.mp4
 
