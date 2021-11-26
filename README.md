@@ -2,13 +2,16 @@
 
 ### GITS2.1 - I.R.I.S (Ideal ReposItory for Software projects)
 
-![GitHub](https://img.shields.io/github/license/hiralbhanu/GITS2.1-I.R.I.S)
+![GitHub](https://img.shields.io/github/license/jayrshah98/GITS2.1-I.R.I.S)
 [![codecov](https://codecov.io/gh/hiralbhanu/GITS2.1-I.R.I.S/branch/master/graph/badge.svg?token=I3KHGTAQLU)](https://codecov.io/gh/hiralbhanu/GITS2.1-I.R.I.S)
 [![DOI](https://zenodo.org/badge/419548765.svg)](https://doi.org/10.5281/zenodo.5630948)
-[![GitHub issues](https://img.shields.io/github/issues/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/hiralbhanu/GITS2.1-I.R.I.S)](https://github.com/hiralbhanu/GITS2.1-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
-![Lines of code](https://img.shields.io/tokei/lines/github/hiralbhanu/GITS2.1-I.R.I.S)
+[![GitHub issues](https://img.shields.io/github/issues/jayrshah98/GITS2.1-I.R.I.S)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/jayrshah98/GITS2.1-I.R.I.S)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/issues?q=is%3Aissue+is%3Aclosed)
+![Lines of code](https://img.shields.io/tokei/lines/github/jayrshah98/GITS2.1-I.R.I.S)
 [![Respost - Write comment to new Issue event](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/Respost.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/Respost.yml)
+[![Style Checker and Prettify Code](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows//Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows//Style_Checker_and_Prettify_Code.yml)
+![version](https://img.shields.io/badge/version-1.0-blue)
+[![Greetings](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/greetings.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/greetings.yml)
 
 Project Video : https://user-images.githubusercontent.com/43321682/140435660-cc44525f-014d-434f-9aec-0fb14e30473f.mp4
 
