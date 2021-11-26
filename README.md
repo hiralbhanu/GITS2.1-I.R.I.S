@@ -126,9 +126,13 @@ Here are some measures that can help compare the results between traditional Git
 
 # Team Members
 This repository is made for CSC-510 Software Engineering Course at NC State University for Fall 2021.
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ineelshah"><img src="https://avatars.githubusercontent.com/u/40118578?v=4" width="75px;" alt=""/><br /><sub><b>Neel Shah</b></sub></a></td>
+    <td align="center"><a href="https://github.com/PvPatel-1001"><img src="https://avatars.githubusercontent.com/u/69849039?v=4" width="75px;" alt=""/><br /><sub><b>Parth Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ameyatathavadkar"><img src="https://avatars.githubusercontent.com/u/25223347?v=4" width="75px;" alt=""/><br /><sub><b>Ameya Tathavadkar</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/jayrshah98"><img src="https://avatars.githubusercontent.com/u/41386638?s=400&u=b323434b42507c474829a804556d69da82d48c3f&v=4" width="75px;" alt=""/><br /><sub><b>Jay Shah</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Harshil-Shah99"><img src="https://avatars.githubusercontent.com/u/38115399?v=4" width="75px;" alt=""/><br /><sub><b>Harshil Shah</b></sub></a><br /></td>
+  </tr>
+</table>
 
-Members 
-1. Hiral Rajendra Bhanushali
-2. Hrushabhsingh Chouhan
-3. Neha Balram Agarwal
-4. Apoorva Chauhan
