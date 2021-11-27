@@ -1,1 +1,0 @@
-reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=F:\NCSU_MSCS\Fall_2021\Software_Engineering\Project\GITS2.1-I.R.I.S\configurations\macros.doskey" /f
