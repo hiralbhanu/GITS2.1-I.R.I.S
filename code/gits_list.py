@@ -8,7 +8,8 @@ def gits_list_commands(args):
     to user console
     """
     print("GITS Custom Commands")
-    path = "https://github.com/hiralbhanu/GITS2.1-I.R.I.S/tree/master/code"
+    # path = "https://github.com/jayrshah98/GITS2.1-I.R.I.S/tree/master/code"
+    path = os.path.join(os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir)), "code")
     files = os.listdir(path)
     for f in files:
         if "_" in f and "gits" in f:
