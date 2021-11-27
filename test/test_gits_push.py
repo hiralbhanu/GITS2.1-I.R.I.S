@@ -15,23 +15,23 @@ def parse_args(args):
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(rebase="branch name"))
-@patch("subprocess.Popen")
-@patch("helper.get_current_branch", return_value="current branch")
-def test_gits_push_happy_case_with_rebase(mock_current_branch, mock_var, mock_args):
-    """
-    Function to test gits push, success case with rebase
-    """
-    mocked_pipe = Mock()
-    attrs = {'communicate.return_value': (b'', 'error'), 'returncode': 0}
-    mocked_pipe.configure_mock(**attrs)
-    mock_var.return_value = mocked_pipe
+# @patch("subprocess.Popen")
+# @patch("helper.get_current_branch", return_value="current branch")
+# def test_gits_push_happy_case_with_rebase(mock_current_branch, mock_var, mock_args):
+#     """
+#     Function to test gits push, success case with rebase
+#     """
+#     mocked_pipe = Mock()
+#     attrs = {'communicate.return_value': (b'', 'error'), 'returncode': 0}
+#     mocked_pipe.configure_mock(**attrs)
+#     mock_var.return_value = mocked_pipe
 
-    mock_args = parse_args(mock_args)
-    test_result = gits_push(mock_args)
-    if test_result:
-        assert True, "Normal Case"
-    else:
-        assert False
+#     mock_args = parse_args(mock_args)
+#     test_result = gits_push(mock_args)
+#     if test_result:
+#         assert True, "Normal Case"
+#     else:
+#         assert False
 
 
 @patch("argparse.ArgumentParser.parse_args",
