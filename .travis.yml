@@ -1,7 +1,7 @@
 language: 
   python
 python:
-- "3.8"
+- "3.9.9"
 install:
 - pip install -U pip
 - pip install -r requirements.txt
@@ -11,7 +11,7 @@ git:
   depth: 50
 include:
   - name: "project-1"
-   python: "3.8"
+   python: "3.9.9"
 script:
 - flake8 --ignore=E501,E402,E722,F841,E741
 - coverage run -m pytest -q test/
