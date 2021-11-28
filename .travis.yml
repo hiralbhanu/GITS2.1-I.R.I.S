@@ -8,5 +8,6 @@ install:
 - pip install coverage
 - pip install codecov
 script:
-- flake8 --ignore=E501,E402,E722,F841,E741
+- cd test
+- pytest
 - coverage run -m pytest -q test/
