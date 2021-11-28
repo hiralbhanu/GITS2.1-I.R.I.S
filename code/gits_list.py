@@ -1,5 +1,6 @@
 import gits_logging
 import os
+import sys
 
 
 def gits_list_commands(args):
@@ -9,7 +10,16 @@ def gits_list_commands(args):
     """
     print("GITS Custom Commands")
     # path = "https://github.com/jayrshah98/GITS2.1-I.R.I.S/tree/master/code"
-    path = os.path.join(os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir)), "code")
+
+
+    path = ""
+    if sys.platform[:3] == "win":
+        path = os.path.join(os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir)), "code")
+
+    elif sys.platform == "linux" or sys.platform == "linux2":
+        user_home_dir = str(Path.home())
+        path = os.path.join(user_home_dir, "code")
+
     files = os.listdir(path)
     for f in files:
         if "_" in f and "gits" in f:

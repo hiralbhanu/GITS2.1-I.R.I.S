@@ -1,7 +1,7 @@
 import os
 
 macrosFile = open("macros.doskey", "w")
-n = macrosFile.write("gits=python \"" + os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "\code\gits.py\" $1")
+n = macrosFile.write("gits=python \"" + os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + "\code\gits.py\" $*")
 macrosFile.close()
 
 gitPath = os.path.join(os.getcwd(), ".gits")
