@@ -1,6 +1,7 @@
 # GITS2.1 - I.R.I.S!
 
-![I R I S  - Ideal Repository for Software Projects](https://user-images.githubusercontent.com/38115399/143765181-d7cfeb3d-db77-4848-89be-8ff6a10557fe.gif)
+![I R I S  - Ideal Repository for Software Projects (1)](https://user-images.githubusercontent.com/38115399/143765775-0cc8030f-96c2-4bee-861d-61a0d8c7ae71.gif)
+
 
 ### GITS2.1 - I.R.I.S (Ideal ReposItory for Software projects)
 
