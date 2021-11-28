@@ -13,4 +13,3 @@ install:
 script:
 - cd test
 - pytest
-- pytest --cov-report term --cov=investpy test/
