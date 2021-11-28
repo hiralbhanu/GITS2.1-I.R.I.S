@@ -8,7 +8,9 @@ install:
 - pip install coverage
 - pip install codecov
 - pip install pytest
+- pip install pytest-cov==2.7.1
+
 script:
 - cd test
 - pytest
-- coverage run -m pytest -q test/
+- pytest --cov-report term --cov=investpy test/
