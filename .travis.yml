@@ -7,11 +7,6 @@ install:
 - pip install -r requirements.txt
 - pip install coverage
 - pip install codecov
-git:
-  depth: 50
-include:
-  - name: "project-1"
-   python: "3.9.9"
 script:
 - flake8 --ignore=E501,E402,E722,F841,E741
 - coverage run -m pytest -q test/
