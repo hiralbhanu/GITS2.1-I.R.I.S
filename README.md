@@ -19,6 +19,7 @@
 [![Close as a feature](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/close_as_a_feature.yml/badge.svg)](https://github.com/jayrshah98/GITS2.1-I.R.I.S/actions/workflows/close_as_a_feature.yml)
 ![GitHub contributors](https://img.shields.io/github/contributors/jayrshah98/GITS2.1-I.R.I.S)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jayrshah98/GITS2.1-I.R.I.S)
+[![Build Status](https://app.travis-ci.com/jayrshah98/GITS2.1-I.R.I.S.svg?branch=master)](https://app.travis-ci.com/jayrshah98/GITS2.1-I.R.I.S)
 
 Project Video :
 
