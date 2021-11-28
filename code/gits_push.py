@@ -12,17 +12,13 @@ import logging
 def issue_checker(info):
     try:
         start_date = datetime.datetime.now() - datetime.timedelta(30)
-        gh_token = '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'
+        gh_token = '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'
         token = os.getenv('GITHUB_TOKEN', gh_token)
         g = Github(token)
         username = info[0][15:]
-        print(type(username))
         repo_ = info[1][:-4]
-        print(type(repo_))
         link = str(username + "/" + repo_)
-        print(link)
         repo = g.get_repo(link)
-        print(repo)
         issues = repo.get_issues(state="closed", since=start_date)
         if len(issues.get_page(0)) >= 1:
             return 1
@@ -147,11 +143,11 @@ def gits_push(args):
 
         total_score = ((issue_score + file_count) / 7) * 100
 
-        grade = calculate_grade(total_score)
+        grade = calculate_grade(int(total_score))
 
         print("Repository grade is :", grade)
 
-        table = [['README.md', '1', score[0]], ['CONTRIBUTING.md', '1', score[1]], ['CODE-OF-CONDUCT.md', '1', score[2]], ['LICENSE.md', '1', score[3]], ['CITATION.md', '1', score[4]], ['.gitignore', '1', score[5]], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
+        table = [['README.md', '1', score[0]], ['CONTRIBUTING.md', '1', score[1]], ['CODE-OF-CONDUCT.md', '1', score[4]], ['LICENSE', '1', score[2]], ['CITATION.md', '1', score[3]], ['.gitignore', '1', score[5]], ['Issues Closed (Last 30 days)', '1', issue_score], ['TOTAL SCORE', (issue_score + file_count), total_score]]
         print("\n")
         print(tabulate(table, headers=['Item', 'Weight', 'Score']))
         print("\n")
