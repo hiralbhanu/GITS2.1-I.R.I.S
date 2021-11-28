@@ -32,7 +32,7 @@ def gits_creategoodrepo(args):
             process_commands = ["gh", "repo", "create", args.repo_name, "--template", "sak007/goodRepo_template", "--public", "-y"]
 
         if sys.platform == "linux" or sys.platform == "linux2":
-            process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
+            process = subprocess.Popen(process_commands, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             stdout, stderr = process.communicate()
             if(process.returncode == 1):
                 return False
