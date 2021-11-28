@@ -7,7 +7,7 @@ def gits_authenticator(args):
     try:
         process_commands = ["gh", "auth", "login", "--web"]
         if sys.platform == "linux" or sys.platform == "linux2":
-            process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
+            process = subprocess.Popen(process_commands, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             stdout, stderr = process.communicate()
             if(process.returncode == 1):
                 return False

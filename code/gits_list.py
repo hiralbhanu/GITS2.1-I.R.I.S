@@ -1,6 +1,7 @@
 import gits_logging
 import os
 import sys
+from pathlib import Path
 
 
 def gits_list_commands(args):
