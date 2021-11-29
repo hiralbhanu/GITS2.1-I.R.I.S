@@ -12,7 +12,7 @@ import logging
 def issue_checker(info):
     try:
         start_date = datetime.datetime.now() - datetime.timedelta(30)
-        gh_token = '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'
+        gh_token = ''
         token = os.getenv('GITHUB_TOKEN', gh_token)
         g = Github(token)
         username = info[0][15:]
