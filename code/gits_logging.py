@@ -18,9 +18,18 @@ def init_gits_logger():
         formatter = logging.Formatter(
             '%(asctime)s %(name)s %(levelname)s %(message)s')
 
-        user_home_dir = str(Path.home())
-        gits_logs_dir = os.path.join(user_home_dir, ".gits", "logs")
+        if sys.platform[:3] == "win":
+            # print(os.path.abspath(os.path.dirname(__file__)))
+            # print(os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
+            # print(os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir)))
 
+            gits_logs_dir = os.path.join(os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), os.pardir)), "configurations", ".gits", "logs")
+            # print(gits_logs_dir)
+        elif sys.platform == "linux" or sys.platform == "linux2":
+            user_home_dir = str(Path.home())
+            gits_logs_dir = os.path.join(user_home_dir, ".gits", "logs")
+
+        # print(gits_logs_dir)
         # checking if logs directory exist or not
         if os.path.isdir(gits_logs_dir):
             # do nothing

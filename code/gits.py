@@ -34,6 +34,8 @@ from gits_list import gits_list_commands
 from gits_version import gits_version
 from gits_countcommits import count_commits
 
+from gits_auth import gits_authenticator
+
 logger_status = init_gits_logger()
 if not logger_status:
     print("ERROR: logger not initialised")
@@ -44,6 +46,10 @@ subparsers = parser.add_subparsers()
 
 gits_hello_subparser = subparsers.add_parser('hello_world')
 gits_hello_subparser.set_defaults(func=gits_hello_world)
+
+gits_auth_subparser = subparsers.add_parser('auth')
+# gits_auth_subparser.add_argument("method", help="Method: Either use --web or --with-token")
+gits_auth_subparser.set_defaults(func=gits_authenticator)
 
 gits_set_subparser = subparsers.add_parser('set')
 gits_set_subparser.add_argument('--parent', help='git parent branch')

@@ -33,7 +33,6 @@ Explain the problem and include additional details to help maintainers reproduce
 6. Explain which behavior you expected to see instead and why.
 7. Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem.
 
-
 ## Enhancement suggestion process / Feature request Process
 
 Bugs are tracked as GitHub issues. You need to create an issue and include all the following details if possible.
@@ -46,40 +45,41 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 
 ## Adding new command
 
-1. Create a new file in _PROJECT HOME_/code/gits_<command name>.py
+1. Create a new file in _PROJECT HOME_/code/gits\_<command name>.py
 2. Follow the template below to create a new command and update the values in
-  _text_ with appropriate values
+   _text_ with appropriate values
 
-    ```
-    from subprocess import Popen, PIPE
-    import gits_logging
+   ```
+   from subprocess import Popen, PIPE
+   import gits_logging
 
-    def gits__command name_(args):
-        try:
-            #Repeat the following code to execute multiple commands
-            command = "_command to be executed_"
-            process_commands = command.split()
-            process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
-            stdout, stderr = process.communicate()
-        except Exception as e:
-            gits_logging.gits_logger.error("gits _command name_ command caught an "
-                + "exception")
-            gits_logging.gits_logger.error("{}".format(str(e)))
-            print("ERROR: gits _command name_ command caught an exception")
-            print("ERROR: {}".format(str(e)))
-            return False
-        return True
-    ```
+   def gits__command name_(args):
+       try:
+           #Repeat the following code to execute multiple commands
+           command = "_command to be executed_"
+           process_commands = command.split()
+           process = Popen(process_commands, stdout=PIPE, stderr=PIPE)
+           stdout, stderr = process.communicate()
+       except Exception as e:
+           gits_logging.gits_logger.error("gits _command name_ command caught an "
+               + "exception")
+           gits_logging.gits_logger.error("{}".format(str(e)))
+           print("ERROR: gits _command name_ command caught an exception")
+           print("ERROR: {}".format(str(e)))
+           return False
+       return True
+   ```
+
 3. Add the following entries in _PROJECT HOME_/code/gits.py
 
-    ```
-    from gits__command name_ import gits__command name_
-    .
-    .
-    gits__command name__subparser = subparsers.add_parser("_command name_")
-    gits__command name__subparser.add_argument("<argument variable1>", help = "_description of the variable_")
-    gits__command name__subparser.add_argument("<argument variable2>", help = "_description of the variable_")
-    .
-    .
-    gits__command name__subparser.set_defaults(func=gits__command name_)
-    ```
+   ```
+   from gits__command name_ import gits__command name_
+   .
+   .
+   gits__command name__subparser = subparsers.add_parser("_command name_")
+   gits__command name__subparser.add_argument("<argument variable1>", help = "_description of the variable_")
+   gits__command name__subparser.add_argument("<argument variable2>", help = "_description of the variable_")
+   .
+   .
+   gits__command name__subparser.set_defaults(func=gits__command name_)
+   ```
